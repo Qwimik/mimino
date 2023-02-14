@@ -1,0 +1,20 @@
+@import url('./reset.css');
+@import url('./global.css');
+/* hotel */
+@import url('./hotel/hotel-hero.css');
+@import url('./hotel/room1.css');
+@import url('./hotel/room2.css');
+@import url('./hotel/room3.css');
+/* main-page */
+@import url('./main-page/about-hotel.css');
+@import url('./main-page/about-restaurant.css');
+@import url('./main-page/contacts.css');
+@import url('./main-page/details-restaurant.css');
+@import url('./main-page/main-hero.css');
+/* restaurant-page */
+@import url('./restaurant-page/about-kitchen.css');
+@import url('./restaurant-page/menu.css');
+@import url('./restaurant-page/restaurant-hero.css');
+/* room-page */
+@import url('./room-page/amenities.css');
+@import url('./room-page/room-hero.css');
