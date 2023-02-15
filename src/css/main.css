@@ -19,5 +19,6 @@
 /* room-page */
 @import url('./room-page/amenities.css');
 @import url('./room-page/room-hero.css');
+@import url('./modal.css');
 
 @import url('./footer.css');
