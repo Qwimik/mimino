@@ -1,5 +1,6 @@
 @import url('./reset.css');
 @import url('./global.css');
+@import url('./header.css');
 /* hotel */
 @import url('./hotel/hotel-hero.css');
 @import url('./hotel/room1.css');
@@ -18,3 +19,5 @@
 /* room-page */
 @import url('./room-page/amenities.css');
 @import url('./room-page/room-hero.css');
+
+@import url('./footer.css');
