@@ -1,11 +1,9 @@
 .hero {
   height: 720px;
-  /* background-color: aqua; */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 auto;
-  padding-top: 164px;
+  margin: 0 auto; */
 }
 
 .hero-main-title {
@@ -17,8 +15,15 @@
   color: #ffffff;
   text-align: center;
   max-width: 404px;
-  margin: 0 auto;
+  padding-top: 164px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: 700;
 }
 
 .hero-subtitle {
@@ -30,8 +35,7 @@
   color: #ffffff;
   text-align: center;
   max-width: 368px;
-  margin: 0 auto;
-  margin-bottom: 64px;
+  margin: 0 auto 64px;
 }
 
 .hero-text-description {
@@ -44,12 +48,40 @@
   text-align: center;
   max-width: 356px;
   margin: 0 auto;
-  margin-bottom: 144px;
+  margin-bottom: 137px;
+  text-transform: uppercase;
 }
 
-.hero-buttons-wrapper {
+.hero-content-wrapper {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-map-place-wrapper {
+  font-family: 'Montserrat-Light', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  display: flex;
+  max-width: 285px;
+  padding: 8px 8px 8px 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-map-place-wrapper::before {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-color: #f3c653;
+  background-image: url(../../public/favicon.svg);
 }
 
 .hero-btn-one {
@@ -57,10 +89,8 @@
 }
 
 .hero-btn {
-  min-width: 232px;
-  height: 48px;
-
-  font-family: 'Montserrat', sans-serif;
+  padding: 14px 35px;
+  font-family: 'Montserrat-Bold', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -71,19 +101,19 @@
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* ======= IMAGES DESCTOP === */
-/* Hero images */
 
-@media screen and (min-width: 1200px) {
+/* ======= HERO IMAGES DESCTOP === */
+
+@media screen and (min-width: 1280px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('../../img/main-page/homepage__bg-hero--desktop.jpg');
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('../../img/main-page/homepage__bg-hero--desktop@2x.jpg');
