@@ -2,16 +2,20 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/mimino/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mimino</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     
-    <script type="module" crossorigin src="/mimino/assets/main-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/mimino/assets/main-f937ca3c.css">
+    <script type="module" crossorigin src="/mimino/assets/slider-a7c50c14.js"></script>
+    <link rel="stylesheet" href="/mimino/assets/slider-62a6151b.css">
   </head>
   <body>
     <div class="container">
@@ -89,20 +93,26 @@
       </p>
     </div>
 
-    <div class="about__slider-wrapper">
-      <ul class="about__slider-img-list">
+    <!-- <div class="about__slider-wrapper"> -->
+    <!-- <ul class="about__slider-img-list">
         <li class="thumb about__slider-img-item">
           <img
-            src="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg"
-            srcset="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg 1x, /mimino/assets/restaurant__general-slider-01--desktop@2x-29e8ebdf.jpg 2x"
+            src="./img/main-page/restaurant__general-slider-01--desktop.jpg"
+            srcset="
+              ./img/main-page/restaurant__general-slider-01--desktop.jpg    1x,
+              ./img/main-page/restaurant__general-slider-01--desktop@2x.jpg 2x
+            "
             alt="Жіноча рука з келихом червоного вина над столиком у ресторані"
           />
         </li>
 
         <li class="thumb about__slider-img-item">
           <img
-            src="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg"
-            srcset="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg 1x, /mimino/assets/restaurant__general-slider-02--desktop@2x-faccb842.jpg 2x"
+            src="./img/main-page/restaurant__general-slider-02--desktop.jpg"
+            srcset="
+              ./img/main-page/restaurant__general-slider-02--desktop.jpg    1x,
+              ./img/main-page/restaurant__general-slider-02--desktop@2x.jpg 2x
+            "
             alt="Стіл, накритий для банкета, в ресторані"
           />
         </li>
@@ -115,8 +125,74 @@
         <li>
           <button class="about__slider-btn" type="button">&#8594;</button>
         </li>
-      </ul>
+      </ul> -->
+    <div class="about__slider-wrapper">
+      <div class="slider-btn-position">
+        <div class="swiper mySwiper about-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg"
+                  srcset="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg 1x, /mimino/assets/restaurant__general-slider-01--desktop@2x-29e8ebdf.jpg 2x"
+                  alt="Жіноча рука з келихом червоного вина над столиком у ресторані"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg"
+                  srcset="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg 1x, /mimino/assets/restaurant__general-slider-02--desktop@2x-faccb842.jpg 2x"
+                  alt="Стіл, накритий для банкета, в ресторані"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg"
+                  srcset="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg 1x, /mimino/assets/restaurant__general-slider-01--desktop@2x-29e8ebdf.jpg 2x"
+                  alt="Жіноча рука з келихом червоного вина над столиком у ресторані"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg"
+                  srcset="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg 1x, /mimino/assets/restaurant__general-slider-02--desktop@2x-faccb842.jpg 2x"
+                  alt="Стіл, накритий для банкета, в ресторані"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg"
+                  srcset="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg 1x, /mimino/assets/restaurant__general-slider-01--desktop@2x-29e8ebdf.jpg 2x"
+                  alt="Жіноча рука з келихом червоного вина над столиком у ресторані"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thumb">
+                <img
+                  src="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg"
+                  srcset="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg 1x, /mimino/assets/restaurant__general-slider-02--desktop@2x-faccb842.jpg 2x"
+                  alt="Стіл, накритий для банкета, в ресторані"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slider-btns">
+            <div class="button-prev btn">&#8592;</div>
+            <div class="button-next btn">&#8594;</div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- </div> -->
   </div>
 </section>
 
@@ -152,6 +228,7 @@
 </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
   </body>
 </html>
