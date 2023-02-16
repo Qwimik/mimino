@@ -125,12 +125,8 @@
   right: 15px;
   bottom: 100px;
 }
-.about__slider-wrapper::selection {
-  user-select: none;
-}
 .slider-btn-position {
   position: relative;
-  max-width: 515px;
 }
 .slider-btns {
   display: flex;
@@ -156,15 +152,15 @@
 
   transition: color 250ms;
 }
-.btn::selection {
-  user-select: none;
-}
-
-.swiper-slide {
-  width: 245px !important;
-}
-
 .swiper-slide .thumb {
   overflow: hidden;
   border-radius: 2px;
+}
+
+/* Slider - НЕ ЗМІНЮВАТИ!!!!!!!!! */
+.about-swiper {
+  max-width: 515px !important;
+}
+.swiper-wrapper {
+  max-width: 515px !important;
 }
