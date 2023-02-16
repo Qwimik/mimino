@@ -1,0 +1,162 @@
+
+.contacts {
+    padding-top: 36px;
+    padding-bottom: 32px;
+    background: #FFFDEE;
+}
+.contacts-logo {
+    font-family: FilmP3Bold;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 43px;
+    letter-spacing: 0.3em;
+    color: #494848;
+    margin-bottom: 12px;
+}
+.contacts-title{
+    font-family:Montserrat-SemiBold;
+    font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.02em;
+color: #7A7A7A;
+margin-bottom: 16px;
+}
+.contacts-list {
+}
+.contacts-text {
+font-family:Montserrat-Medium;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #C79002;
+}
+.contact-text-link{
+font-family: Montserrat-Regular;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+color: #494848;
+border: 0.5px solid #F3C653;
+border-radius: 2px;
+padding-left: 40px;
+padding-right: 8px;
+padding-top: 12px;
+padding-bottom: 11px;
+margin-left: 22px;
+
+}
+.hotel-tel{
+    margin-left: 54px;
+}
+.contacts-link-hotel-tel:not(:last-child){
+margin-right: 7px;
+}
+.contacts-item{
+    display: flex;
+    align-items: center;
+}
+.contacts-item:not(:last-child){
+    margin-bottom: 16px;
+}
+.contacts-address{
+    font-family: Montserrat-Regular;
+    font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.01em;
+color: #494848;
+   padding-left: 44px;
+padding-right: 33px;
+padding-top: 8px;
+padding-bottom: 7px;
+border: 0.5px solid #F3C653;
+border-radius: 2px;
+margin-left: 124px;
+margin-bottom: 32px;
+}
+.contacts-map{
+    border: 1px solid #BABABA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    width: 384px;
+    height: 220px;
+}
+
+
+  @media screen and (min-width: 414px) {
+    .container {
+      width: 414px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 960px;
+    }
+    .contacts {
+        padding-top: 56px;
+        padding-bottom: 40px;
+    }
+    .contacts-under-container{
+        display: flex;
+        gap: 101px;
+    }
+    .contacts-logo {
+        font-size: 64px;
+        line-height: 69px;
+        margin-bottom: 8px;
+    }
+    .contacts-title{
+        margin-bottom: 52px;
+    }
+    .contacts-text{
+        margin-bottom: 8px;
+    }
+    .rest-tel{
+        display: block;
+        width: 146px;
+        margin-left: 0;
+    }
+    .contacts-list{
+    }
+    .contacts-item{
+        display: block;
+        
+    }
+    .contacts-item:not(:last-child){
+        margin-bottom: 0;
+    }
+    .rest-tel{
+    margin-bottom: 24px;
+    }
+  
+  .hotel-tel{
+    margin-left: 0;
+    width: 264px;
+  }
+  .hotel-tel{
+    margin-bottom: 48px;
+  }
+  .contacts-address{
+    display: block;
+    margin-left: 0;
+    width: 285px;
+    padding-right: 8px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
+  }
+  .contacts-map{
+    width: 535px;
+    height: 420px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+     }
+}
+  @media screen and (min-width: 1280px) {
+    .container {
+      width: 1140px;
+    }
+  }
