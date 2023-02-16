@@ -78,16 +78,13 @@
 }
 .next-pic-btn:hover,
 .next-pic-btn:focus,
+.next-pic-btn:active,
 .prev-pic-btn:hover,
-.prev-pic-btn:focus {
+.prev-pic-btn:focus,
+.prev-pic-btn:active {
   fill: #f3c653;
 }
-.prev-pic-btn {
-  background-image: url();
-}
-.next-pic-btn {
-  background-image: url();
-}
+
 
 .service-list {
   display: flex;
