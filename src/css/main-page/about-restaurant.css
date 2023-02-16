@@ -1,0 +1,126 @@
+.about-restaurant {
+  background-color: #fffdee;
+}
+
+.about__container {
+  position: relative;
+  padding-bottom: 225px;
+}
+
+.about__top-block {
+  position: relative;
+  margin-bottom: 162px;
+  padding-top: 120px;
+}
+
+.about__wrapper {
+  max-width: 518px;
+}
+
+.about__slogan {
+  margin-bottom: 4px;
+
+  font-family: 'TimesNewRomanPSMT', serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: calc(37 / 32);
+  color: #b4b4b4;
+}
+
+.about__logo {
+  margin-bottom: 24px;
+
+  font-family: 'FilmP3Bold', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: calc(69 / 64);
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+
+.about__text {
+  font-family: 'Montserrat-SemiBold', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+}
+
+.about__text--colored {
+  width: 312px;
+  padding-top: 178px;
+
+  color: #c79002;
+}
+
+.about__img {
+  min-width: 460px;
+  height: 574px;
+
+  border-radius: 2px;
+  background-color: #dadada;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.about__img--intruder {
+  position: absolute;
+  top: -33px;
+  right: 95px;
+}
+
+.about__bottom-block {
+  display: flex;
+  gap: 32px;
+}
+
+.about__slider-wrapper {
+  position: absolute;
+  right: 15px;
+  bottom: 50px;
+}
+
+.about__slider-img-list {
+  display: flex;
+  gap: 40px;
+  max-width: 548px;
+  margin-bottom: 36px;
+}
+
+.about__slider-img-item {
+  min-width: 254px;
+
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.about__slider-arrow-list {
+  display: flex;
+  gap: 32px;
+  padding-right: 8px;
+  width: 104px;
+  margin-left: auto;
+}
+
+.about__slider-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  font-size: 33px;
+  line-height: 0;
+  color: red;
+
+  border: none;
+  background-color: transparent;
+
+  transition: color 250ms;
+}
+
+.about__slider-btn:hover,
+.about__slider-btn:focus {
+  color: #f3c653;
+}
