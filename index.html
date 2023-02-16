@@ -11,7 +11,7 @@
     />
     
     <script type="module" crossorigin src="/mimino/assets/main-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/mimino/assets/main-511133fe.css">
+    <link rel="stylesheet" href="/mimino/assets/main-f937ca3c.css">
   </head>
   <body>
     <div class="container">
@@ -50,40 +50,35 @@
 
     <!--Andrii Tsokur-->
     <section class="about-restaurant page-section">
-  <div class="container">
+  <!-- CHANGE "../../img" with "./img" BEFORE pull request -->
+  <div class="container about__container">
     <h2 class="visually-hidden">Про наш ресторан</h2>
 
     <div class="about__top-block">
-      <h3 class="about__slogan">Amet minim mollit non</h3>
-      <p class="about__logo">МІМІНО</p>
-      <p class="about__text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
+      <div class="about__wrapper">
+        <h3 class="about__slogan">Amet minim mollit non</h3>
+        <p class="about__logo">MIMIHO</p>
+        <p class="about__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
 
-      <div class="thumb">
+      <div class="thumb about__img about__img--intruder">
         <img
-          class="about__img"
-          src="../../img/main-page/homepage__rest-about-01--desktop.jpg"
-          srcset="
-            ../../img/main-page/homepage__rest-about-01--desktop.jpg    1x,
-            ../../img/main-page/homepage__rest-about-01--desktop@2x.jpg 2x
-          "
+          src="/mimino/assets/homepage__rest-about-01--desktop-07179902.jpg"
+          srcset="/mimino/assets/homepage__rest-about-01--desktop-07179902.jpg 1x, /mimino/assets/homepage__rest-about-01--desktop@2x-ffc8d489.jpg 2x"
           alt="Інтер'єр першого залу ресторану"
         />
       </div>
     </div>
 
     <div class="about__bottom-block">
-      <div class="thumb">
+      <div class="thumb about__img">
         <img
-          class="about__img"
-          src="../../img/main-page/homepage__rest-about-02--desktop.jpg"
-          srcset="
-            ../../img/main-page/homepage__rest-about-02--desktop.jpg    1x,
-            ../../img/main-page/homepage__rest-about-02--desktop@2x.jpg 2x
-          "
+          src="/mimino/assets/homepage__rest-about-02--desktop-e6e8bf0f.jpg"
+          srcset="/mimino/assets/homepage__rest-about-02--desktop-e6e8bf0f.jpg 1x, /mimino/assets/homepage__rest-about-02--desktop@2x-59064017.jpg 2x"
           alt="Інтер'єр другого залу ресторану"
         />
       </div>
@@ -94,34 +89,33 @@
       </p>
     </div>
 
-    <div class="about__slider">
-      <div class="thumb">
-        <img
-          class="about__slider-img"
-          src="../../img/main-page/restaurant__general-slider-01--desktop.jpg"
-          srcset="
-            ../../img/main-page/restaurant__general-slider-01--desktop.jpg    1x,
-            ../../img/main-page/restaurant__general-slider-01--desktop@2x.jpg 2x
-          "
-          alt="Жіноча рука з келихом червоного вина над столиком у ресторані"
-        />
-      </div>
+    <div class="about__slider-wrapper">
+      <ul class="about__slider-img-list">
+        <li class="thumb about__slider-img-item">
+          <img
+            src="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg"
+            srcset="/mimino/assets/restaurant__general-slider-01--desktop-b76f0566.jpg 1x, /mimino/assets/restaurant__general-slider-01--desktop@2x-29e8ebdf.jpg 2x"
+            alt="Жіноча рука з келихом червоного вина над столиком у ресторані"
+          />
+        </li>
 
-      <div class="thumb">
-        <img
-          class="about__slider-img"
-          src="../../img/main-page/restaurant__general-slider-02--desktop.jpg"
-          srcset="
-            ../../img/main-page/restaurant__general-slider-02--desktop.jpg    1x,
-            ../../img/main-page/restaurant__general-slider-02--desktop@2x.jpg 2x
-          "
-          alt="Стіл, накритий для банкета, в ресторані"
-        />
-      </div>
+        <li class="thumb about__slider-img-item">
+          <img
+            src="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg"
+            srcset="/mimino/assets/restaurant__general-slider-02--desktop-0247e794.jpg 1x, /mimino/assets/restaurant__general-slider-02--desktop@2x-faccb842.jpg 2x"
+            alt="Стіл, накритий для банкета, в ресторані"
+          />
+        </li>
+      </ul>
 
-      <p style="color: white; font-weight: 700; background-color: red">
-        Додати стрілки слайдера через CSS
-      </p>
+      <ul class="about__slider-arrow-list">
+        <li>
+          <button class="about__slider-btn" type="button">&#8592;</button>
+        </li>
+        <li>
+          <button class="about__slider-btn" type="button">&#8594;</button>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
