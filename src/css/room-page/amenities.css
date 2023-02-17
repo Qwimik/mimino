@@ -57,7 +57,7 @@ margin-bottom: 16px;
 }
 
 .amenities-text-1 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Regular', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -68,7 +68,7 @@ margin-bottom: 16px;
 }
 
 .amenities-text {
-font-family: 'Montserrat';
+font-family: 'Montserrat-Regular', sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -92,7 +92,7 @@ margin-bottom: 16px;
 background-color: #000000;
 border: 1px solid #F3C653;
 border-radius: 25px;
-font-family: 'Montserrat';
+font-family: 'Montserrat-Regular', sans-serif;
 font-style: normal;
 font-weight: 500;
 color: #FFFFFF;
@@ -109,24 +109,41 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .amenities-back {
-font-family: 'Montserrat';
+font-family: 'Montserrat-Regular', sans-serif;
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.02em;
-color: #C79002;
+
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.amenities-back:hover,
-.amenities-back:focus {
+.amenities-link {
+color: #C79002;
+}
+
+.amenities-link:hover,
+.amenities-link:focus {
   color: #F3C653;
+  
+}
+
+.amenities-link:hover .amenities-back-icon {
+  opacity: 0;
+}
+
+.amenities-link:focus .amenities-back-icon {
+  opacity: 0;
 }
 
 @media screen and (max-width: 1023px) {
+  .amenities-back-icon {
+  fill: #C79002;
+  margin-left: 12px;
+  }
     .reserved {
         display: flex;
         flex-direction: column;
@@ -137,6 +154,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         min-width: 288px;
         width: 100%;
         height: 64px;
+        text-align: center;
 }
 .amenities-section {
     padding-top: 32px;
@@ -154,6 +172,10 @@ line-height: 1.25;
 
 /* Tablet */
 @media screen and (min-width: 1024px) {
+   .amenities-back-icon {
+  fill: #C79002;
+  margin-left: 17px;
+  }
     .amenities-btn {
         width: 434px;
         height: 65px;
