@@ -65,8 +65,33 @@
   .room__slider {
     width: 194px;
   }
+
+  .swiper-slide {
+    margin-right: 16px !important;
+ }
+
+  .room__slider-position {
+    position: relative;
+  }
+  .slider-btn-position {
+    position: absolute;
+    top: 0;
+    left: -120px ;
+  }
+
+  .swiper-slide__img {
+    width: 194px !important;
+    height: 194px !important;
+  }
+
+  .room__slider-btns {
+    margin-top: 20px;
+  }
+
   .room__buttons{
     display: flex;
+    margin-top: 20px;
+    padding-bottom: 32px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
