@@ -70,11 +70,12 @@
   width: 32px;
   height: 32px;
   border: none;
-  background-color: #bababa;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   fill: #ffffff;
+  transition: fill 250ms linear;
 }
 .next-pic-btn:hover,
 .next-pic-btn:focus,
@@ -107,6 +108,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  transition: border-color 250ms linear, background-color 250ms linear;
 }
 .service-btn:hover,
 .service-btn:focus {
