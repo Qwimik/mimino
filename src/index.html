@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mimino</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<link rel="icon" type="image/x-icon" href="./favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Mimino</title>
-	<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="./css/main.css" />
-</head>
+  <body>
+    <div class="container">
+      <nav style="display: flex; gap: 24px">
+        <a
+          style="border: 1px solid tomato; padding: 5px 10px"
+          href="./index.html"
+          >Mimino</a
+        >
+        <a
+          style="border: 1px solid tomato; padding: 5px 10px"
+          href="./restaurant.html"
+          >Restaurant</a
+        >
+        <a
+          style="border: 1px solid tomato; padding: 5px 10px"
+          href="./hotel.html"
+          >Hotel</a
+        >
+        <a
+          style="border: 1px solid tomato; padding: 5px 10px"
+          href="./room.html"
+          >Room</a
+        >
+      </nav>
+    </div>
+    <!--Назар Крюк-->
+    <load src="./partials/header.html" />
+    <!--Pavlo Yakubovskyi-->
+    <load src="./partials/main-page/main-hero.html" />
+    <!--Andrii Tsokur-->
+    <load src="./partials/main-page/about-restaurant.html" />
+    <!--Olha Pruska-->
+    <load src="./partials/main-page/details-restaurant.html" />
+    <!--Andrii Tsokur-->
+    <load src="./partials/main-page/about-hotel.html" />
+    <!--Olha Pruska-->
+    <load src="./partials/main-page/details-hotel.html" />
+    <!--Анна Обруч-->
+    <load src="./partials/main-page/contacts.html" />
+    <!--Назар Крюк-->
+    <load src="./partials/footer.html" />
 
-<body>
-	<div class="container">
-		<nav style="display: flex; gap: 24px">
-			<a style="border: 1px solid tomato; padding: 5px 10px" href="./index.html">Mimino</a>
-			<a style="border: 1px solid tomato; padding: 5px 10px" href="./restaurant.html">Restaurant</a>
-			<a style="border: 1px solid tomato; padding: 5px 10px" href="./hotel.html">Hotel</a>
-			<a style="border: 1px solid tomato; padding: 5px 10px" href="./room.html">Room</a>
-		</nav>
-	</div>
-	<!--Назар Крюк-->
-	<load src="./partials/header.html" />
-	<!--Pavlo Yakubovskyi-->
-	<load src="./partials/main-page/main-hero.html" />
-	<!--Andrii Tsokur-->
-	<load src="./partials/main-page/about-restaurant.html" />
-	<!--Olha Pruska-->
-	<load src="./partials/main-page/details-restaurant.html" />
-	<!--Andrii Tsokur-->
-	<load src="./partials/main-page/about-hotel.html" />
-	<!--Olha Pruska-->
-	<load src="./partials/main-page/details-hotel.html" />
-	<!--Анна Обруч-->
-	<load src="./partials/main-page/contacts.html" />
-	<!--Назар Крюк-->
-	<load src="./partials/footer.html" />
+    <!--Oleksii Rozhnenko-->
+    <load src="./partials/modal.html" />
 
-	<!--Oleksii Rozhnenko-->
-	<load src="./partials/modal.html" />
-
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	<script type="module" src="./main.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
