@@ -104,7 +104,13 @@
   gap: 32px;
   width: 98px;
   margin-top: 20px;
-  margin-left: 130px;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 413px) {
+  .slider-btns {
+    margin-inline: 130px 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
