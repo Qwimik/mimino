@@ -44,8 +44,15 @@
     border: 1.5px solid #000000;
 
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
 
     cursor: pointer;
+}
+.comment{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.82;
+    letter-spacing: 0.02em;
+    background-color: #C79002;
 }
