@@ -31,7 +31,7 @@ line-height: 24px;
 letter-spacing: 0.02em;
 color: #C79002;
 }
-.contact-text-link{
+.contacts-text-link{
 font-family: Montserrat-Regular;
 font-weight: 400;
 font-size: 14px;
@@ -159,8 +159,11 @@ display: flex;
         width: 146px;
         margin-left: 0;
         margin-bottom: 24px;
+        width: 151px;
     }
-    
+    .contacts-link-rest-tel{
+      width: 100%;
+    }
     .contacts-item{
         display: block;
         
@@ -212,7 +215,7 @@ margin-bottom: 40px;
     .contacts-under-container{
       gap: 108px;
     }
-    .contact-text-link{
+    .contacts-text-link{
       color: #828282;
     }
     .contacts-address {
