@@ -74,36 +74,79 @@
   margin-bottom: 32px;
 }
 
-.about__slider-wrapper {
+/* .about__slider-wrapper {
   position: absolute;
   left: 84px;
   bottom: 23px;
-}
+} */
 
-.about__slider-img-list {
+/* .about__slider-img-list {
   display: flex;
   gap: 25px;
   max-width: 330px;
   margin-bottom: 20px;
-}
+} */
 
-.about__slider-img-item {
+/* .about__slider-img-item {
   min-width: 245px;
-
   border-radius: 2px;
   background-color: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+} */
+
+/* .about__slider-arrow-list {
+  display: flex;
+  gap: 32px;
+  padding-right: 8px;
+  width: 104px;
+  margin-left: auto;
+} */
+
+/* .about__slider-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  font-size: 33px;
+  line-height: 0;
+  color: red;
+
+  border: none;
+  background-color: transparent;
+
+  transition: color 250ms;
+} */
+
+.about__slider-btn:hover,
+.about__slider-btn:focus,
+.about__slider-btn:active {
+  color: #f3c653;
 }
 
-.about__slider-arrow-list {
+/* ================= SLIDER - Start ================ */
+
+.about__slider-wrapper {
+  position: absolute;
+  right: 15px;
+  bottom: 100px;
+}
+
+.slider-btn-position {
+  position: relative;
+}
+
+.slider-btns {
   display: flex;
   gap: 32px;
   width: 96px;
   margin-left: 130px;
 }
 
-.about__slider-btn {
+.btn {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,11 +163,19 @@
   transition: color 250ms;
 }
 
-.about__slider-btn:hover,
-.about__slider-btn:focus,
-.about__slider-btn:active {
-  color: #f3c653;
+.swiper-slide .thumb {
+  overflow: hidden;
+  border-radius: 2px;
 }
+
+/* Slider - НЕ ЗМІНЮВАТИ!!!!!!!!! */
+.about-swiper {
+  max-width: 515px !important;
+}
+.swiper-wrapper {
+  max-width: 515px !important;
+}
+/* ================== SLIDER - End ================= */
 
 /* ================= TABLET ================ */
 @media screen and (min-width: 1024px) {
