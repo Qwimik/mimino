@@ -1,19 +1,17 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal-close-btn" type="button" data-modal-close>
-      <svg width="18" height="18">
-        <use href="../img/icons.svg#icon-x"></use>
+<div class="backdrop is-hidden" data-modal-close>
+  <div class="modal" data-modal>
+    <button class="modal-close-btn " type="button">
+      <svg class="icon-x" width="18" height="18">
+        <use href="./img/icons.svg#icon-x"></use>
       </svg>
     </button>
+    <p class="title-modal"><strong>ЗАБРОНЮВАТИ СТОЛИК</strong></p>
     <form class="modal-form">
-      <p class="title-modal"><strong>ЗАБРОНЮВАТИ СТОЛИК</strong></p>
-      <div class="">
         <div class="">
-          <input id="user-name" type="text" name="user-name" class="form-input" required>
+          <input id="modal-input" type="text" name="user-name" class="form-input" required>
           <label for="user-name" class="form-lable"><span class="label-title">Ваше ім’я</span></label>
           <p class="comment">На кого забронювати столик?</p>
         </div>
-      </div>
       <div class="">
         <div class="">
           <input id="user-tel" type="text" name="user-name" class="form-input" required>
@@ -23,71 +21,30 @@
       </div>
         <div class="form-fild">
           <div class="modal-position-icon">
-            <input id="user-name" type="text" name="user-name" class="form-input" required>
+            <input id="modal-input" type="text" name="user-name" class="form-input" required>
             <label for="user-number" class="form-lable"><span class="label-title">2</span></label>
-            <svg width="12" height="12" class="modal-icon">
+          <button type="button">
+            <svg class="icon-untitled" width="20" height="12" class="modal-icon">
               <use href="../img/icons.svg#icon-untitled"></use>
             </svg>
+          </button>
           </div>
           <p class="comment">Столик на яку кількість осіб?</p>
         </div>
         <div class="form-fild">
           <div class="modal-position-icon">
-            <input id="user-name" type="text" name="user-name" class="form-input" required>
+            <input id="modal-input" type="text" name="user-name" class="form-input" required>
             <label for="user-number" class="form-lable"><span class="label-title">Сьогодні</span></label>
-            <svg width="12" height="12" class="modal-icon">
-              <use href="../img/icons.svg#icon-untitled"></use>
-            </svg>
+            <button type="button">
+              <svg width="20" height="12" class="modal-icon">
+                <use href="../img/icons.svg#icon-untitled"></use>
+              </svg>
+            </button>
           </div>
           <p class="comment">На яку дату бронювати?</p>
         </div>
         <button type="button" class="button modal-form-button">ОФОРМИТИ БРОНЮВАННЯ</button>
-        </form>
-        </div>
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal-close-btn" type="button" data-modal-close>
-      <svg width="18" height="18">
-        <use href="../img/icons.svg#icon-x"></use>
-      </svg>
-    </button>
-    <form class="modal-form">
-      <p class="title-modal"><strong>ЗАБРОНЮВАТИ СТОЛИК</strong></p>
-      <div class="">
-        <div class="">
-          <input id="user-name" type="text" name="user-name" class="form-input" required>
-          <label for="user-name" class="form-lable"><span class="label-title">Ваше ім’я</span></label>
-          <p class="comment">На кого забронювати столик?</p>
-        </div>
-      </div>
-      <div class="">
-        <div class="">
-          <input id="user-tel" type="text" name="user-name" class="form-input" required>
-          <label for="user-name" class="form-lable"><span class="label-title">+38 (___) ___-__-__</span></label>
-          <p class="comment">Номер телефону</p>
-        </div>
-      </div>
-      <div class="form-fild">
-        <div class="modal-position-icon">
-          <input id="user-name" type="text" name="user-name" class="form-input" required>
-          <label for="user-number" class="form-lable"><span class="label-title">2</span></label>
-          <svg width="12" height="12" class="modal-icon">
-            <use href="../img/icons.svg#icon-untitled"></use>
-          </svg>
-        </div>
-        <p class="comment">Столик на яку кількість осіб?</p>
-      </div>
-      <div class="form-fild">
-        <div class="modal-position-icon">
-          <input id="user-name" type="text" name="user-name" class="form-input" required>
-          <label for="user-number" class="form-lable"><span class="label-title">Сьогодні</span></label>
-          <svg width="12" height="12" class="modal-icon">
-            <use href="../img/icons.svg#icon-untitled"></use>
-          </svg>
-        </div>
-        <p class="comment">На яку дату бронювати?</p>
-      </div>
-      <button type="button" class="button modal-form-button">ОФОРМИТИ БРОНЮВАННЯ</button>
     </form>
   </div>
 </div>
+      
