@@ -48,11 +48,6 @@ button {
     background-color: #FFFDEE;
 }
 
-.amenities-section {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .amenities-title {
 font-family: 'Times New Roman';
 font-size: 32px;
@@ -94,20 +89,23 @@ margin-bottom: 16px;
 }
 
 .amenities-btn {
-max-width: 384px;
-min-width: 288px;
-width: 100%;
-height: 64px;
 background-color: #000000;
 border: 1px solid #F3C653;
 border-radius: 25px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
 color: #FFFFFF;
 margin-bottom: 20px;
+transition-property: background-color, color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.amenities-btn:hover, 
+.amenities-btn:focus {
+  background-color: #F3C653;
+  color: #000000;
 }
 
 .amenities-back {
@@ -118,7 +116,14 @@ font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.02em;
 color: #C79002;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.amenities-back:hover,
+.amenities-back:focus {
+  color: #F3C653;
 }
 
 @media screen and (max-width: 1023px) {
@@ -127,10 +132,33 @@ color: #C79002;
         flex-direction: column;
         align-items: center;
 }
+    .amenities-btn {
+        max-width: 384px;
+        min-width: 288px;
+        width: 100%;
+        height: 64px;
+}
+.amenities-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.amenities-btn {
+font-size: 20px;
+line-height: 1.2;
+}
+.amenities-back {
+font-size: 16px;
+line-height: 1.25;
+}
 }
 
 /* Tablet */
 @media screen and (min-width: 1024px) {
+    .amenities-btn {
+        width: 434px;
+        height: 65px;
+    }
+
     .animaties-sect {
         display: flex;
         
@@ -151,16 +179,33 @@ color: #C79002;
         flex-direction: column;
     align-items: flex-end;
     }
+    .amenities-btn {
+    font-size: 24px;
+    line-height: 1.2;
+    }
+    .amenities-back {
+    font-size: 20px;
+    line-height: 1.2;
+    }
+
 
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .text-2 {
         margin-left: 80px;
     }
+        .amenities-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    }
 }
 /* Desktop */
 @media screen and (min-width: 1280px) {
     .text-2 {
         margin-left: 159px;
+    }
+        .amenities-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
     }
 }
