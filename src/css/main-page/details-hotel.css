@@ -1,6 +1,6 @@
 .details-hotel {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../img/main-page/homepage__bg-hotel-details--mobile.jpg);
+    url(/img/main-page/homepage__bg-hotel-details--mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,7 +12,7 @@
   (min-resolution: 2dppx) {
   .details-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/main-page/homepage__bg-hotel-details--mobile@2.jpg);
+      url(/img/main-page/homepage__bg-hotel-details--mobile@2.jpg);
   }
 }
 .details-hotel-text {
@@ -42,13 +42,13 @@
 @media screen and (min-width: 1024px) {
     .details-hotel {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url(../img/main-page/homepage__bg-hotel-details--tablet.jpg);
+          url(/img/main-page/homepage__bg-hotel-details--tablet.jpg);
         padding-top: 48px;
     }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .details-hotel {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url(../img/main-page/homepage__bg-hotel-details--tablet@2.jpg);
+              url(/img/main-page/homepage__bg-hotel-details--tablet@2.jpg);
             padding-top: 48px;
         }
       }
@@ -64,13 +64,13 @@
 @media screen and (min-width: 1280px) {
     .details-hotel {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url(../img/main-page/homepage__bg-hotel-details--desktop.jpg);
+          url(/img/main-page/homepage__bg-hotel-details--desktop.jpg);
         
     }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .details-hotel {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url(../img/main-page/homepage__bg-hotel-details--desktop@2.jpg);
+              url(/img/main-page/homepage__bg-hotel-details--desktop@2.jpg);
             
         }
       }

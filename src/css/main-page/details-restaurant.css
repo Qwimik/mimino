@@ -1,6 +1,6 @@
 .details-restaurant {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../img/main-page/homepage__bg-rest-details--mobile.jpg);
+    url(/img/main-page/homepage__bg-rest-details--mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -16,7 +16,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../img/main-page/homepage__bg-rest-details--mobile@2x.jpg);
+        url(/img/main-page/homepage__bg-rest-details--mobile@2x.jpg);
     }
   }
 .details-res-text {
@@ -125,13 +125,13 @@
 @media screen and (min-width: 1024px) {
   .details-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/main-page/homepage__bg-rest-details--tablet.jpg);
+      url(/img/main-page/homepage__bg-rest-details--tablet.jpg);
     padding-top: 48px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .details-restaurant {
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url(../img/main-page/homepage__bg-rest-details--tablet@2x.jpg);
+        url(/img/main-page/homepage__bg-rest-details--tablet@2x.jpg);
     }
   }
   .details-res-text {
@@ -182,7 +182,7 @@
 @media screen and (min-width: 1280px) {
   .details-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(../img/main-page/homepage__bg-rest-details--desktop.jpg);
+      url(/img/main-page/homepage__bg-rest-details--desktop.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -192,7 +192,7 @@
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
         ),
-        url(../img/main-page/homepage__bg-rest-details--desktop@2x.jpg);
+        url(/img/main-page/homepage__bg-rest-details--desktop@2x.jpg);
     }
   }
   .details-res-text {
