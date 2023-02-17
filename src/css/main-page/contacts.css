@@ -159,8 +159,11 @@ display: flex;
         width: 146px;
         margin-left: 0;
         margin-bottom: 24px;
+        width: 151px;
     }
-    
+    .contacts-link-rest-tel{
+      width: 100%;
+    }
     .contacts-item{
         display: block;
         
