@@ -1,108 +1,297 @@
+/*============== MAIN HERO MOBILE ======= */
 .hero {
-  height: 720px;
-  /* background-repeat: no-repeat;
+  /* padding-top: 64px;
+  padding-bottom: 20px; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../../img/main-page/homepage__bg-hero--mobile.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 auto; */
+  margin: 0 auto;
+  height: 740px;
 }
 
 .hero-main-title {
   font-family: 'FilmP3Bold', sans-serif;
   font-weight: 700;
-  font-size: 128px;
+  font-size: 96px;
   line-height: 1.1;
   letter-spacing: 0.3em;
   color: #ffffff;
   text-align: center;
-  max-width: 404px;
-  padding-top: 164px;
+  max-width: 303px;
+  padding-top: 181px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   text-transform: uppercase;
 }
 
-.text-bold {
-  font-weight: 700;
-}
-
 .hero-subtitle {
-  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: 'Montserrat-Light', sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #ffffff;
   text-align: center;
-  max-width: 368px;
-  margin: 0 auto 64px;
+  max-width: 294px;
+  margin: 0 auto 40px;
 }
 
 .hero-text-description {
   font-family: 'TimesNewRomanPS-Bold', sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   color: #ffffff;
   text-align: center;
-  max-width: 356px;
+  max-width: 317px;
   margin: 0 auto;
-  margin-bottom: 137px;
+  margin-bottom: 113px;
   text-transform: uppercase;
 }
 
-.hero-content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.hero-map-place-wrapper {
-  font-family: 'Montserrat-Light', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  color: #e5e5e5;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
-  display: flex;
-  max-width: 285px;
-  padding: 8px 8px 8px 10px;
-  gap: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.hero-map-place-wrapper::before {
-  display: block;
-  content: '';
-  width: 24px;
-  height: 24px;
-  background-color: #f3c653;
-  background-image: url(../../public/favicon.svg);
-}
-
-.hero-btn-one {
-  margin-right: 60px;
-}
-
 .hero-btn {
-  padding: 14px 35px;
   font-family: 'Montserrat-Bold', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
   color: #f3c653;
-
+  padding: 14px 24px;
   border: 2px solid #ffffff;
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* ======= HERO IMAGES DESCTOP === */
+@media screen and (max-width: 1023px) {
+  .hero-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-btn-one {
+    margin-bottom: 24px;
+  }
+}
+
+/* ======= MAIN HERO IMAGES MOBIL === */
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../../img/main-page/homepage__bg-hero--mobile@2x.jpg);
+  }
+}
+
+/*============== // HERO MOBIL ======= */
+
+/*============== MAIN HERO TABLET ======= */
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 720px;
+  }
+
+  .hero-main-title {
+    font-size: 128px;
+    max-width: 404px;
+    padding-top: 188px;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    max-width: 368px;
+    margin-bottom: 56px;
+  }
+
+  .hero-text-description {
+    font-size: 36px;
+    max-width: 356px;
+    margin-bottom: 137px;
+  }
+
+  .hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-map-place-wrapper {
+    font-family: 'Montserrat-Light', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #e5e5e5;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding: 8px 8px 8px 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 285px;
+  }
+
+  .hero-map-icon {
+    fill: #f3c653;
+  }
+
+  /* .hero-map-place-wrapper::before {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url('../../img/icons.svg#icon-arrow-down');
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+  .hero-btn-one {
+    margin-right: 40px;
+  }
+
+  /* .hero-btn {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #f3c653;
+    padding: 14px 35px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+  } */
+}
+
+/* ======= MAIN HERO IMAGES TABLET === */
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../../img/main-page/homepage__bg-hero--tablet.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+  screen and (min-resolution: 192dpi) and (min-width: 1024px),
+  screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../../img/main-page/homepage__bg-hero--tablet@2x.jpg);
+  }
+}
+/*============== // MAIN HERO TABLET ======== */
+
+/*============== MAIN HERO DESKTOP ======= */
+@media screen and (min-width: 1280px) {
+  /* .hero {
+    height: 720px;
+  } */
+
+  .hero-main-title {
+    /* font-family: 'FilmP3Bold', sans-serif;
+  font-weight: 700; */
+    /* font-size: 128px; */
+    /* line-height: 1.1;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-align: center; */
+    /* max-width: 404px; */
+    padding-top: 164px;
+    /* margin-left: auto;
+  margin-right: auto; */
+    margin-bottom: 32px;
+    /* text-transform: uppercase; */
+  }
+
+  .hero-subtitle {
+    /* font-family: 'Montserrat-Light', sans-serif;
+  font-weight: 600; */
+    /* font-size: 20px; */
+    /* line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center; */
+    /* max-width: 368px; */
+    margin-bottom: 64px;
+    /* margin: 0 auto 64px; */
+  }
+
+  /* .hero-text-description {
+    font-family: 'TimesNewRomanPS-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    text-align: center;
+    max-width: 356px;
+    margin: 0 auto;
+    margin-bottom: 137px;
+    text-transform: uppercase;
+  } */
+
+  /* .hero-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } */
+
+  /* .hero-map-place-wrapper {
+    font-family: 'Montserrat-Light', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #e5e5e5;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding: 8px 8px 8px 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 285px;
+  } */
+
+  /* .hero-map-icon {
+    fill: #f3c653;
+  } */
+
+  /* .hero-map-place-wrapper::before {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url('../../img/icons.svg#icon-arrow-down');
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+  .hero-btn-one {
+    margin-right: 60px;
+  }
+
+  .hero-btn {
+    /* font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #f3c653; */
+    padding: 14px 35px;
+    /* border: 2px solid #ffffff;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.4); */
+  }
+}
+
+/* ======= MAIN HERO IMAGES DESCTOP === */
 
 @media screen and (min-width: 1280px) {
   .hero {
@@ -119,3 +308,4 @@
       url('../../img/main-page/homepage__bg-hero--desktop@2x.jpg');
   }
 }
+/*============== // MAIN HERO DESKTOP ======== */
