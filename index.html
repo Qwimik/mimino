@@ -18,7 +18,7 @@
     />
     
     <script type="module" crossorigin src="/mimino/assets/modal-f4f2fa25.js"></script>
-    <link rel="stylesheet" href="/mimino/assets/modal-27f7c9f6.css">
+    <link rel="stylesheet" href="/mimino/assets/modal-75f837d3.css">
   </head>
 
   <body>
@@ -910,7 +910,7 @@
     </button>
     <p class="title-modal"><strong>ЗАБРОНЮВАТИ СТОЛИК</strong></p>
     <form class="modal-form">
-      <div class="">
+      <div class="modal-position-icon">
         <input
           class="modal-input"
           id="user-name"
@@ -918,12 +918,10 @@
           name="name"
           placeholder="Ваше ім’я"
           pattern="[A-Za-zА-Яа-яЁё]{2,20}"
-          required
-        />
+          required/>
         <label for="user-name" class="form-lable"><span class="label-title">На кого забронювати столик?</span></label
         >
       </div>
-      <div class="">
         <div class="modal-position-icon">
           <input
             class="modal-input"
@@ -932,13 +930,10 @@
             name="tel"
             placeholder="+38 (___) ___-__-__"
             pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-            required
-          />
+            required/>
           <label for="user-number" class="form-lable"><span class="label-title">Номер телефону</span></label
           >
-        </div>
       </div>
-      <div class="">
         <div class="modal-position-icon">
           <select class="modal-input" id="number" name="number">
             <option value="2" selected>2</option>
@@ -951,21 +946,17 @@
             ></label
           >
         </div>
-      </div>
-      <div class="">
-        <div class="modal-position-icon">
+        <div class="modal-position-icon select-position">
           <select class="modal-input" name="day" id="day">
             <optgroup label="Сьогодні">
-              <option value="Сьогодні" selected>Сьогодні</option>
-              <option value="Завтра">Завтра</option>
-              <option value="На конкретну дату">Обрати дату</option>
+              <option class="option" value="Сьогодні" selected>Сьогодні</option>
+              <option class="option" value="Завтра">Завтра</option>
+              <option class="option" value="На конкретну дату">Обрати іншу дату</option>
             </optgroup>
           </select>
-
           <label for="user-data" class="form-lable"><span class="label-title">На яку дату бронювати?</span></label
           >
         </div>
-      </div>
       <button type="submit" class="modal-form-button">
         ОФОРМИТИ БРОНЮВАННЯ
       </button>
