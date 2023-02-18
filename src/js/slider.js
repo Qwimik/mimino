@@ -18,3 +18,13 @@ new Swiper('.room-hero-swiper', {
     prevEl: '.btn-prev',
   },
 });
+
+new Swiper('.details-slider', {
+  slidesPerView: 'auto',
+  spaceBetween: 86,
+  loop: true,
+  navigation: {
+    nextEl: '.details-btn-next',
+    prevEl: '.details-btn-prev',
+  },
+});
