@@ -18,13 +18,12 @@
     line-height: 1.07;
   }
   
-  .block {
+  .section-container {
     padding-top: 32px;
   }
   
   .text__over-title {
     font-family: 'TimesNewRomanPSMT', serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
@@ -46,16 +45,18 @@
     padding-bottom: 12px;
   }
   .text__paragraph {
-    font-family: "Montserrat";
+    font-family: 'Montserrat-Medium';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #7A7A7A;
-    padding-right: 141px;
-    padding-bottom: 32px;
   }
+  .text__paragraph--room1 {
+  padding-right: 126px;
+  padding-bottom: 32px;
+}
   
   .room__image {
     display: block;
@@ -68,26 +69,40 @@
 
   .swiper-slide {
     margin-right: 16px !important;
+    width: 194px !important;
+    height: 194px !important;
  }
 
   .room__slider-position {
     position: relative;
   }
   .slider-btn-position {
-    position: absolute;
     top: 0;
-    left: -120px ;
+    position: relative;
   }
-
+  .slider-btn-position--room1 {
+    margin-left: -15px;
+  }/* 
   .swiper-slide__img {
     width: 194px !important;
     height: 194px !important;
+  } */
+  
+  .swiper.room1-swiper {
+    width: 284px !important;
+    margin-left: 0;
+}
+  .room-img-width {
+    width: 194px;
+    height: 194px;
   }
 
   .room__slider-btns {
     margin-top: 20px;
   }
-
+  .room1__slider-btns {
+    margin-left: 15px !important;
+  }
   .room__buttons{
     display: flex;
     margin-top: 20px;
