@@ -46,6 +46,9 @@
   letter-spacing: 0.02em;
   color: #bababa;
 }
+.wrapper {
+  margin-top: 48px;
+}
 .details-res-swiper {
   margin-top: 48px;
   /* margin-bottom: 32px; */
