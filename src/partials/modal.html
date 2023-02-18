@@ -1,6 +1,6 @@
-<div class="backdrop is-hidden" data-modal-close>
-  <div class="modal" data-modal>
-    <button class="modal-close-btn" type="button">
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close-btn" type="button" data-modal-close>
       <svg class="icon-x" width="18" height="18">
         <use href="./img/icons.svg#icon-close"></use>
       </svg>
@@ -17,8 +17,7 @@
           pattern="[A-Za-zА-Яа-яЁё]{2,20}"
           required
         />
-        <label for="user-name" class="form-lable"
-          ><span class="label-title">На кого забронювати столик?</span></label
+        <label for="user-name" class="form-lable"><span class="label-title">На кого забронювати столик?</span></label
         >
       </div>
       <div class="">
@@ -32,21 +31,19 @@
             pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
             required
           />
-          <label for="user-number" class="form-lable"
-            ><span class="label-title">Номер телефону</span></label
+          <label for="user-number" class="form-lable"><span class="label-title">Номер телефону</span></label
           >
         </div>
       </div>
       <div class="">
         <div class="modal-position-icon">
-          <select class="modal-select" id="number" name="number">
+          <select class="modal-input" id="number" name="number">
             <option value="2" selected>2</option>
             <option value="5">5</option>
             <option value="10">10</option>
             <option value="15">15</option>
           </select>
-          <label for="size" class="form-lable"
-            ><span class="label-title"
+          <label for="size" class="form-lable"><span class="label-title"
               >Столик на яку кількість осіб?</span
             ></label
           >
@@ -54,16 +51,15 @@
       </div>
       <div class="">
         <div class="modal-position-icon">
-          <select class="modal-select" name="day" id="day">
+          <select class="modal-input" name="day" id="day">
             <optgroup label="Сьогодні">
               <option value="Сьогодні" selected>Сьогодні</option>
               <option value="Завтра">Завтра</option>
-              <option value="На конкретну дату">На конкретну дату</option>
+              <option value="На конкретну дату">Обрати дату</option>
             </optgroup>
           </select>
 
-          <label for="user-data" class="form-lable"
-            ><span class="label-title">На яку дату бронювати?</span></label
+          <label for="user-data" class="form-lable"><span class="label-title">На яку дату бронювати?</span></label
           >
         </div>
       </div>
