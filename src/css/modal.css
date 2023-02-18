@@ -1,4 +1,4 @@
-
+/* <<<=============== Modal window Book Table ===================>>> */
 .backdrop {
   position: fixed;
   top: 0;
@@ -106,12 +106,44 @@ body.modal-open {
   border-radius: 5px;
   margin-bottom: 8px;
 }
+
+/* icons ===================================== > */
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.select-icon-pocition{
+  position:relative;
+}
+.select-icon-pocition::after{
+  content: '';
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  transition: tranform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background: url(./img/icons.svg#icon-arrow-down) 0 0 / 100% no-repeat;
+
+}
+.select-icon-pocition:focus-within::after {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+/*=== icons================================ > */
+
+
 .label-title{
  color: #C79002;
  margin-left: 27px;
 
 }
-
 
 .modal-form-button{
   display: block;
@@ -119,6 +151,7 @@ body.modal-open {
   margin-right: auto;
   padding: 20px 43px;
   font-size: 20px;
+  font-weight: 'Montserrat';
   line-height: 0,83;
   text-align: center;
   color:#FFFFFF;
@@ -126,7 +159,8 @@ body.modal-open {
   border: 1px solid #F3C653;
   border-radius: 2px;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+  letter-spacing: 0,02px;
 }
 .modal-position-icon{
   margin-bottom: 20px;
@@ -167,7 +201,7 @@ body.modal-open {
   margin-bottom: 60px;
 
 }
-.modal-form{
+ .modal-form{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -175,10 +209,10 @@ body.modal-open {
 
   }
 
-  .modal-position-icon{
+ .modal-position-icon{
   margin-bottom: 28px;
 } 
-.modal-input{
+ .modal-input{
   font-size: 24px;
   line-height: 0,87;
 }
@@ -283,6 +317,7 @@ body.modal-open {
   letter-spacing: 0.05em;
   padding-left: 12px;
 
+
 }
 .modal-select-room{
  
@@ -298,30 +333,28 @@ body.modal-open {
  margin-left: 27px;
 
 }
+.modal-position-room
+{margin-bottom: 20px;}
 
-.modal-form-button-room{
+.modal-button-room{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  min-width: 384px;
+  height: 64px;
   padding: 20px 43px;
+  
   font-size: 20px;
-  line-height: 0,83;
+
   text-align: center;
   color:#FFFFFF;
   background: #000000;
   border: 1px solid #F3C653;
   border-radius: 2px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.modal-position-icon-room{
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 
-} 
-.select-position-room{
-  margin-bottom: 40px;
 }
-
 
 /* =============== media screen ===================*/
  @media screen and (min-width: 1024px) 
@@ -330,42 +363,43 @@ body.modal-open {
   max-width: 712px;
   max-height: 638px;
   padding-bottom: 0px;
-  /* overflow: scroll; */
+
 
   }
   .title-modal-room{
-    font-size: 40px;
+    font-size: 36px;
     line-height: 0.87;
     letter-spacing: 0.05em;
   }
 
-
-  .modal-position-icon-room{
-    min-width: 288px;
-  }
-
-  .modal-form-button-room{
+.modal-input-room{
+  max-width: 288px;
+  font-size: 24px;
+  line-height: 0,87;
+  letter-spacing: 0.05em;
+}
+.modal-select-room{
+  min-width: 288px;
+}
+.modal-button-room{
   font-size:24px;
   line-height: 0,82;
   width: 592px;
   height: 64px;
-  margin-top: 0px;
-  margin-bottom: 60px;
+  margin-top: 12px;
 
 }
-.modal-form-room{
+.modal-position-room{
+  margin-bottom: 28px;}
+
+.contact{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
+  margin-bottom: 0px;
+}
+.lux{
+  margin-left: 349px;
 
-  }
-
-  .modal-position-icon-room{
-  margin-bottom: 28px;
-} 
-.modal-input-room{
-  font-size: 24px;
-  line-height: 0,87;
 }
 }
