@@ -24,9 +24,36 @@
     }
 }
 
-.container{
+
+
+.menu-page-section{
     background-color: #FFFDEE;
+    padding: 32px 0;
+
 }
+
+@media screen and (min-width:1024px) {
+   
+
+    .menu-page-section{
+        background-color: #F0ECD6;
+    }
+
+
+    
+    .menu-list{
+        max-height: 625px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+     }
+
+}
+
+
+
 
 .menu-title{
     font-family:'Times New Roman PSMT';
@@ -38,6 +65,12 @@
     margin-bottom: 32px;
 }
 
+ @media screen and (min-windth:1024px) {
+    .menu-title{
+        margin-bottom: 40px;
+    }
+}
+
 .menu-subtitle{
     font-family: 'Times New Roman PSMT';
     font-style: normal;
@@ -46,6 +79,39 @@
     line-height: 1.15;
     margin-bottom: 16px;
 }
+
+    @media screen and (min-width:1024px) {
+        .menu-subtitle{
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (min-width:1280px) {
+        .menu-subtitle{
+            font-size: 24px;
+        }
+    }
+
+     .menu-type {
+        margin-bottom: 8px;
+     }
+
+     .menu-type:last-child{
+        margin-bottom: 0;
+     }
+
+     @media screen and (min-width:1280px) {
+        .menu-type{
+            margin-bottom: 12px;
+        }
+
+        .menu-type:last-child{
+            margin-bottom: 0;
+        }
+
+ }
+    
+
 .dish-name{
     font-family: 'Montserrat-medium';
     font-style:normal;
@@ -56,6 +122,13 @@
     letter-spacing: 0.02em;
     margin-bottom: 4px;
     height: 17px;
+    display: inline-block;
+}
+
+@media screen and (min-width:1280px) {
+    .dish-name{
+        font-size: 16px;
+    }
 }
 .dish-text{
     font-family: 'Montserrat';
@@ -65,7 +138,10 @@
     line-height: 1.2;
     color: #000000;
     width: 220px;
+    
 }
+
+
 
 .dish-weight{
     font-family: 'Montserrat-Light';
@@ -74,6 +150,8 @@
     font-size: 14px;
     line-height: 1.21;
     color: #000000;
+    margin-left: auto;
+    
     
 }
 
@@ -83,14 +161,48 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.21;
+    margin-left: 32px;
 }
+
+.deserts{
+        font-family: 'Montserrat-medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+        color: #000000;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+}
+
+@media screen and (min-width:1280px) {
+    .deserts{
+        font-size: 16px;
+    }
+}
+
+
+
+
 
 .menu-info{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+}
+
+@media screen and (min-width:1024px) {
+
+    .menu-type{
+        max-width: 411px;
+
+    }
+    .menu-info {
+        justify-content: space-between;
+    }
 }
 .menu-button{
+    display: block;
+    justify-content: center;
     background-color: #000000;
     border: none;
     border-radius: 25px;
@@ -106,12 +218,18 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 32px;
-    margin-bottom: 32px;
+    cursor: pointer;
    
-    
-
-    
-
-    
 }
 
+    @media screen and (min-width:1024px) {
+        .menu-type{
+            max-width: 485px;
+        }
+        .menu-button{
+        display: block;
+        margin: 0;
+        margin-left: auto;
+    }
+    
+}
