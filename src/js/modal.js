@@ -1,54 +1,84 @@
-const refs = {
-  openBookRoomModalBtn: document.querySelector('[data-book-room-modal-open]'),
-  openBookTableModalBtn: document.querySelector('[data-book-table-modal-open]'),
-  openRoomPriceModalBtn: document.querySelector('[data-room-price-modal-open]'),
+!(function (e) {
+  'function' != typeof e.matches &&
+    (e.matches =
+      e.msMatchesSelector ||
+      e.mozMatchesSelector ||
+      e.webkitMatchesSelector ||
+      function (e) {
+        for (
+          var t = this,
+            o = (t.document || t.ownerDocument).querySelectorAll(e),
+            n = 0;
+          o[n] && o[n] !== t;
 
-  closeBookRoomModalBtn: document.querySelector('[data-book-room-modal-close]'),
-  closeBookTableModalBtn: document.querySelector(
-    '[data-book-table-modal-close]'
-  ),
-  closeRoomPriceModalBtn: document.querySelector(
-    '[data-room-price-modal-close]'
-  ),
+        )
+          ++n;
+        return Boolean(o[n]);
+      }),
+    'function' != typeof e.closest &&
+      (e.closest = function (e) {
+        for (var t = this; t && 1 === t.nodeType; ) {
+          if (t.matches(e)) return t;
+          t = t.parentNode;
+        }
+        return null;
+      });
+})(window.Element.prototype);
 
-  bookRoomModal: document.querySelector('[data-book-room-modal]'),
-  bookTableModal: document.querySelector('[data-book-table-modal]'),
-  roomPriceModal: document.querySelector('[data-room-price-modal]'),
-};
+document.addEventListener('DOMContentLoaded', function () {
+  /* Записываем в переменные массив элементов-кнопок и подложку.
+      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+  var modalButtons = document.querySelectorAll('.js-open-modal'),
+    overlay = document.querySelector('.js-overlay-modal'),
+    closeButtons = document.querySelectorAll('.js-modal-close');
 
-refs.openBookRoomModalBtn.addEventListener('click', toggleBookRoomModal);
-refs.openBookTableModalBtn.addEventListener('click', toogleBookTableModal);
-refs.openRoomPriceModalBtn.addEventListener('click', toogleRoomPriceModal);
+  /* Перебираем массив кнопок */
+  modalButtons.forEach(function (item) {
+    /* Назначаем каждой кнопке обработчик клика */
+    item.addEventListener('click', function (e) {
+      /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+            Нужно подстраховаться. */
+      e.preventDefault();
 
-refs.closeBookRoomModalBtn.addEventListener('click', toggleBookRoomModal);
-refs.closeBookTableModalBtn.addEventListener('click', toogleBookTableModal);
-refs.closeRoomPriceModalBtn.addEventListener('click', toogleRoomPriceModal);
+      /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+            и будем искать модальное окно с таким же атрибутом. */
+      var modalId = this.getAttribute('data-modal'),
+        modalElem = document.querySelector(
+          '.modal[data-modal="' + modalId + '"]'
+        );
 
-refs.bookRoomModal.addEventListener('click', e => {
-  if (e.currentTarget === e.target) {
-    toggleBookRoomModal();
-  }
-});
-refs.bookTableModal.addEventListener('click', e => {
-  if (e.currentTarget === e.target) {
-    toogleBookTableModal();
-  }
-});
-refs.roomPriceModal.addEventListener('click', e => {
-  if (e.currentTarget === e.target) {
-    toogleRoomPriceModal();
-  }
-});
+      /* После того как нашли нужное модальное окно, добавим классы
+            подложке и окну чтобы показать их. */
+      modalElem.classList.add('active');
+      overlay.classList.add('active');
+    }); // end click
+  }); // end foreach
 
-function toggleBookRoomModal() {
-  document.body.classList.toggle('modal-open');
-  refs.bookRoomModal.classList.toggle('is-hidden');
-}
-function toogleBookTableModal() {
-  document.body.classList.toggle('modal-open');
-  refs.bookTableModal.classList.toggle('is-hidden');
-}
-function toogleRoomPriceModal() {
-  document.body.classList.toggle('modal-open');
-  refs.roomPriceModal.classList.toggle('is-hidden');
-}
+  closeButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      var parentModal = this.closest('.modal');
+
+      parentModal.classList.remove('active');
+      overlay.classList.remove('active');
+    });
+  }); // end foreach
+
+  document.body.addEventListener(
+    'keyup',
+    function (e) {
+      var key = e.keyCode;
+
+      if (key == 27) {
+        document.querySelector('.modal.active').classList.remove('active');
+        document.querySelector('.overlay').classList.remove('active');
+      }
+    },
+    false
+  );
+
+  overlay.addEventListener('click', function () {
+    document.querySelector('.modal.active').classList.remove('active');
+    this.classList.remove('active');
+  });
+}); // end ready
