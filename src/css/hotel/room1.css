@@ -144,13 +144,13 @@
     width: 194px;
   }
 
-  .swiper-slide {
+  .swiper-slide--rooms {
     margin-right: 16px !important;
     width: 194px !important;
     height: 194px !important;
  }
  @media screen and (min-width: 1024px) {
-  .swiper-slide {
+  .swiper-slide--rooms {
     margin-right: 40px !important;
   }
 }
