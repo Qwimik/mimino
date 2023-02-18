@@ -128,7 +128,7 @@
         <div class="hero-map-place-wrapper">
           <div>
             <svg class="hero-map-icon" width="20" height="20">
-              <use href="/mimino/assets/icons-1a49d766.svg#icon-location-pin"></use>
+              <use href="/mimino/assets/icons-cad88784.svg#icon-location-pin"></use>
             </svg>
           </div>
           <a
@@ -161,7 +161,7 @@
             class="hero-soc-link link"
           >
             <svg class="hero-soc-icon" width="24" height="24">
-              <use href="/mimino/assets/icons-1a49d766.svg#icon-instagram"></use>
+              <use href="/mimino/assets/icons-cad88784.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -172,7 +172,7 @@
             class="hero-soc-link link"
           >
             <svg class="hero-soc-icon" width="24" height="24">
-              <use href="/mimino/assets/icons-1a49d766.svg#icon-facebook"></use>
+              <use href="/mimino/assets/icons-cad88784.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -183,7 +183,7 @@
             class="hero-soc-link link"
           >
             <svg class="hero-soc-icon" width="24" height="24">
-              <use href="/mimino/assets/icons-1a49d766.svg#icon-telegram"></use>
+              <use href="/mimino/assets/icons-cad88784.svg#icon-telegram"></use>
             </svg>
           </a>
         </li>
@@ -376,12 +376,12 @@
 					<div class="slider-btns">
 						<div class="button-prev btn about__slider-btn">
 							<svg width="32" height="32">
-								<use href="/mimino/assets/icons-1a49d766.svg#icon-Vector-left"></use>
+								<use href="/mimino/assets/icons-cad88784.svg#icon-Vector-left"></use>
 							</svg>
 						</div>
 						<div class="button-next btn about__slider-btn">
 							<svg width="32" height="32">
-								<use href="/mimino/assets/icons-1a49d766.svg#icon-Vector-right"></use>
+								<use href="/mimino/assets/icons-cad88784.svg#icon-Vector-right"></use>
 							</svg>
 						</div>
 					</div>
@@ -481,7 +481,7 @@
             <p class="contacts-text">Ресторан</p>
             <div class="contacts-text-link rest-tel">
               <svg class="contacts-icon" width="24" height="24">
-                <use href="/mimino/assets/icons-1a49d766.svg#icon-phone"></use>
+                <use href="/mimino/assets/icons-cad88784.svg#icon-phone"></use>
               </svg>
               <a class="contacts-link-rest-tel" href="tel:0955559533">095 555 95 33</a>
             </div>
@@ -490,7 +490,7 @@
             <p class="contacts-text">Готель</p>
             <div class="contacts-text-link hotel-tel">
               <svg class="contacts-icon" width="24" height="24">
-                <use href="/mimino/assets/icons-1a49d766.svg#icon-phone"></use>
+                <use href="/mimino/assets/icons-cad88784.svg#icon-phone"></use>
               </svg>
               <div class="two-tel">
                 <a class="contacts-link-hotel-tel" href="tel:0668491089">066 849 10 89</a>
@@ -501,7 +501,7 @@
           <li class="contacts-item">
             <div class="contacts-address">
               <svg class="contacts-icon" width="24" height="24">
-                <use href="/mimino/assets/icons-1a49d766.svg#icon-location-pin"></use>
+                <use href="/mimino/assets/icons-cad88784.svg#icon-location-pin"></use>
               </svg>
               <a
                 class="contacts-address-link"
@@ -532,67 +532,53 @@
 
 
     <!--Oleksii Rozhnenko-->
-    <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal-close-btn" type="button" data-modal-close>
-      <svg width="18" height="18">
-        <use href="./images/icons.svg#icon-close"></use>
+    <div class="backdrop is-hidden" data-modal-close>
+  <div class="modal" data-modal>
+    <button class="modal-close-btn " type="button">
+      <svg class="icon-x" width="18" height="18">
+        <use href="/mimino/assets/icons-cad88784.svg#icon-close"></use>
       </svg>
     </button>
+    <p class="title-modal"><strong>ЗАБРОНЮВАТИ СТОЛИК</strong></p> 
     <form class="modal-form">
-      <p class="title-modal"><strong>ЗАБРОНЮВАТИ СТОЛИК</strong></p>
-      <div class="">
         <div class="">
-          <input id="user-name" type="text" name="user-name" class="form-input" required>
-          <svg width="12" height="12" class="modal-icon">
-            <use href="./images/icons.svg#icon-user"></use>
-          </svg>
-          <label for="user-name" class="form-lable"><span class="label-title">Ваше ім’я</span></label>
-          <p class="comment">На кого забронювати столик?</p>
+          <input class="modal-input" id="user-name" type="text" name="name" placeholder="Ваше ім’я"
+          pattern="[A-Za-zА-Яа-яЁё]{2,20}" required>
+          <label for="user-name" class="form-lable"><span class="label-title">На кого забронювати столик?</span></label>
         </div>
-      </div>
-
-      <!-- <div class="form-fild">
-        <label for="user-tel" class="form-lable"><span class="label-title">Телефон</span></label>
-        <div class="modal-position-icon">
-          <input id="user-tel" type="tel" name="tel" class="form-input" required>
-          <svg width="13" height="13" class="modal-icon">
-            <use href="./images/icons.svg#icon-tel"></use>
-          </svg>
+        <div class="">
+          <div class="modal-position-icon">
+            <input class="modal-input" id="user-tel" type="tel" name="tel" placeholder="+38 (___) ___-__-__" 
+            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+            <label for="user-number" class="form-lable"><span class="label-title">Номер телефону</span></label>
+          </div>
         </div>
-      </div>
-
-      <div class="form-fild">
-        <label for="user-email" class="form-lable"><span class="label-title">Пошта</span></label>
-        <div class="modal-position-icon">
-          <input id="user-email" type="email" name="email" class="form-input" required>
-          <svg width="15" height="12" class="modal-icon">
-            <use href="./images/icons.svg#icon-letter"></use>
-          </svg>
+        <div class="">
+          <div class="modal-position-icon">
+            <select class="modal-select" id="number" name="number">
+              <option value="2" selected>2</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+            </select>
+            <label for="size" class="form-lable"><span class="label-title">Столик на яку кількість осіб?</span></label>
+          </div>
         </div>
-
-      </div>
-
-
-      <label class="label-comment">
-        <span class="label-title-comment">Коментар</span>
-        <textarea placeholder="Введіть текст" name="comment" class="comment"></textarea>
-      </label>
-
-      <label class="form-checkbox">
-        <input type="checkbox" name="checkbox" class="form-accept visually-hidden" required>
-        <span class="checkbox-icon">
-          <svg class="icon" width="16" height="15">
-            <use href="./images/icons.svg#icon-mark"></use>
-          </svg>
-        </span>
-        <span class="checkbox-title">Погоджуюся з розсилкою та приймаю <a href="" class="contract">Умови договору</a>
-        </span>
-      </label>
-      <button type="submit" class="button modal-form-button">Відправити</button>
+        <div class="">
+          <div class="modal-position-icon">
+            <select class="modal-select" name="day" id="day"><optgroup label="Сьогодні">
+              <option value="Сьогодні" selected>Сьогодні</option>
+              <option value="Завтра">Завтра</option>
+              <option value="На конкретну дату">На конкретну дату</option>
+            </select>
+            <label for="user-data" class="form-lable"><span class="label-title">На яку дату бронювати?</span></label>
+          </div>
+        </div>
+        <button type="submit" class="modal-form-button">ОФОРМИТИ БРОНЮВАННЯ</button>
     </form>
   </div>
-</div> -->
+</div>
+      
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
