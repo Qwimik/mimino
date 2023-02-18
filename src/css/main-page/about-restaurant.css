@@ -161,37 +161,26 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .swiper-slide {
+  .about-slide {
     width: 194px !important;
     margin-right: 35px !important;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-slide {
+  .about-slide {
     width: 254px !important;
   }
 }
 
-/* Slider - НЕ ЗМІНЮВАТИ!!!!!!!!! */
-.about-swiper {
-  max-width: 515px !important;
-}
-
-.swiper-wrapper {
-  max-width: 515px !important;
-}
-
 @media screen and (min-width: 1024px) {
-  .about-swiper,
-  .swiper-wrapper {
+  .about-swiper {
     max-width: 428px !important;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .about-swiper,
-  .swiper-wrapper {
+  .about-swiper {
     max-width: 548px !important;
   }
 }
