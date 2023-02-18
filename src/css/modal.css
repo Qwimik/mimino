@@ -1,3 +1,4 @@
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -22,10 +23,10 @@
 }
 
 .modal {
-  width: 95%;
+  width: 100%;
   max-width: 414px;
-  height: 95%;
-  min-height: 668px;
+  height: 100%;
+  max-height: 668px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,6 +36,10 @@
   padding: 15px;
   background-color: #fffdee;
   border-radius: 2px;
+
+}
+body.modal-open {
+  overflow: hidden;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -45,6 +50,7 @@
   padding: 0px;
 
   background-color: transparent;
+   border: 1.5px solid #000000;
   border: none;
   /* position: absolute;
     right: 16px;
@@ -57,16 +63,16 @@
 }
 .icon-x {
   stroke: black;
-  border: 1.5px solid #000000;
 }
 
 .title-modal {
   font-size: 24px;
   font-weight: 700px;
-  line-height: 0, 86;
+  line-height: 0.86;
   color: #000000;
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 27px;
 }
 
 .comment {
@@ -80,21 +86,34 @@
   display: block;
   width: 100%;
   height: 54px;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #808080;
   background-color: transparent;
   border: 1px solid #c79002;
   border-radius: 5px;
-  margin-bottom: 45px;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+  padding-left: 12px;
+    
 
-  font-size: 20px;
-  line-height: 0.82;
 }
 .modal-select{
+  font-size: 14px;
   width: 100%;
   height: 54px;
   background-color: transparent;
   border: 1px solid #c79002;
   border-radius: 5px;
-  margin-bottom: 45px;
+  margin-bottom: 8px;
+}
+.label-title{
+ color: #C79002;
+ margin-left: 27px;
+
+}
+.modal-select{
+  color: #C79002;
 }
 
 .modal-form-button{
@@ -103,13 +122,18 @@
   margin-right: auto;
   padding: 20px 43px;
   font-size: 20px;
-  font-weight: 500;
-  line-height: 0,83;
-  align-items: center;
   text-align: center;
   color:#FFFFFF;
   background: #000000;
   border: 1px solid #F3C653;
-  border-radius: 2px; 
+  border-radius: 2px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 
+}
+.modal-position-icon{
+  margin-bottom: 20px;
+} 
+.select-position{
+  margin-bottom: 40px;
 }

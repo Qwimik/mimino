@@ -1,0 +1,58 @@
+/*============== RESTAURANT HERO MOBILE ======= */
+.restaurant-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('../../img/restaurant-page/restaurant__bg-hero--mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .restaurant-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../../img/restaurant-page/restaurant__bg-hero--mobile@2x.jpg');
+  }
+}
+
+/*============== // RESTAURANT HERO MOBIL ======= */
+
+/*============== RESTAURANT HERO TABLET ======= */
+
+@media screen and (min-width: 1024px) {
+  .restaurant-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../../img/restaurant-page/restaurant__bg-hero--tablet.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+  screen and (min-resolution: 192dpi) and (min-width: 1024px),
+  screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .restaurant-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../../img/restaurant-page/restaurant__bg-hero--tablet@2x.jpg');
+  }
+}
+
+/*============== // RESTAURANT HERO TABLET ======== */
+
+/*============== RESTAURANT HERO DESKTOP ======= */
+@media screen and (min-width: 1280px) {
+  .restaurant-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../../img/restaurant-page/restaurant__bg-hero--desktop.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .restaurant-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../../img/restaurant-page/restaurant__bg-hero--desktop@2x.jpg');
+  }
+}
+/*============== // RESTAURANT HERO DESKTOP ======== */

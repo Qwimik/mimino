@@ -1,12 +1,17 @@
 .details-restaurant {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(/img/main-page/homepage__bg-rest-details--mobile.jpg);
+  url(/img/main-page/homepage__bg-rest-details--mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
   background-position: center;
   padding-bottom: 40px;
   padding-top: 24px;
+  /*  */
+  /* max-width: 1280px;
+  background-color:#fffdee ;
+  margin: 0 auto; */
+  background-color: #fffdee;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -245,3 +250,4 @@
     gap: 100px;
   } */
 }
+
