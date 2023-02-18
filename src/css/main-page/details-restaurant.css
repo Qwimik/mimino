@@ -69,7 +69,9 @@
   /* margin-bottom: 16px; */
   margin-right: 19px !important;
 }
-
+.details-res-swiper-slide-thin {
+  width: 162px !important;
+}
 .swiper-btn-list {
   display: flex;
   gap: 33px;
@@ -84,7 +86,6 @@
   gap: 15px;
 } */
 .dish-img {
-  width: 100%;
   height: 270px;
 }
 .next-pic-btn,

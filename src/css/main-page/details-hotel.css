@@ -19,12 +19,20 @@
   margin-left: 17px;
   width: 243px;
 }
+.hotel-img {
+  height: 270px;
+}
 .hotel-after-title-description {
-    width: 243px;
+  width: 243px;
 }
 .hotel-logo-title,
 .hotel-after-logo-title {
   text-align: right;
+}
+.details-hotel-swiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 .hotel-swiper-wrap {
     display: flex;
