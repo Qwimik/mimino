@@ -1,22 +1,31 @@
 .details-restaurant {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  url(/img/main-page/homepage__bg-rest-details--mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 40px;
+  padding-top: 24px; */
+  background-color: #fffdee;
+  margin: 0 auto;
+}
+.wrap-wrap {
+  /* це все на дітейл ресторан */
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
   url(/img/main-page/homepage__bg-rest-details--mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   background-position: center;
   padding-bottom: 40px;
   padding-top: 24px;
-  /*  */
-  /* max-width: 1280px;
-  background-color:#fffdee ;
-  margin: 0 auto; */
-  background-color: #fffdee;
+  margin: 0 auto;
+  
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .details-restaurant {
+    /* клас був не врапврап, а дітейлс ресторан */
+  .wrap-wrap {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(/img/main-page/homepage__bg-rest-details--mobile@2x.jpg);
   }
@@ -142,13 +151,18 @@
   background-color: #ffffff;
 }
 
+
 @media screen and (min-width: 414px) {
   .details-res-text {
     margin-left: 125px;
   }
+  .wrap-wrap {
+    max-width: 414px;
+  }
 }
 @media screen and (min-width: 1024px) {
-  .details-restaurant {
+  /* клас був не врапврап, а дітейлс ресторан */
+  .wrap-wrap {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(/img/main-page/homepage__bg-rest-details--tablet.jpg);
     padding-top: 48px;
@@ -156,7 +170,8 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .details-restaurant {
+      /* клас був не врапврап, а дітейлс ресторан */
+    .wrap-wrap {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
@@ -220,16 +235,23 @@
     margin-bottom: 56px;
     /* margin-left: 32px; */
   }
+
+
+  .wrap-wrap {
+    max-width: 1024px;
+  }
 }
 @media screen and (min-width: 1280px) {
-  .details-restaurant {
+  /* клас був не врапврап, а дітейлс ресторан */
+  .wrap-wrap {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(/img/main-page/homepage__bg-rest-details--desktop.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .details-restaurant {
+      /* клас був не врапврап, а дітейлс ресторан */
+    .wrap-wrap {
       background-image: linear-gradient(
           rgba(0, 0, 0, 0.65),
           rgba(0, 0, 0, 0.65)
@@ -249,5 +271,9 @@
   /* .dishes-list {
     gap: 100px;
   } */
+
+  .wrap-wrap {
+    max-width: 1280px;
+  }
 }
 
