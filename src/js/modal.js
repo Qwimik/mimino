@@ -31,7 +31,7 @@ refs.bookRoomModal.addEventListener('click', e => {
 });
 refs.bookTableModal.addEventListener('click', e => {
   if (e.currentTarget === e.target) {
-    toggleBookRoomModal();
+    toogleBookTableModal();
   }
 });
 refs.roomPriceModal.addEventListener('click', e => {
