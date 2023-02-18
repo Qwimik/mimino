@@ -157,7 +157,6 @@
 .swiper-slide .thumb {
   overflow: hidden;
   border-radius: 2px;
-  background-color: #dadada;
 }
 
 @media screen and (min-width: 1024px) {
