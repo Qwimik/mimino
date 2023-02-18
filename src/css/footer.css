@@ -1,3 +1,6 @@
+footer{
+  background-color: #0E0C07;
+}
 .footer-container{
     display: flex;
     flex-wrap: wrap;
