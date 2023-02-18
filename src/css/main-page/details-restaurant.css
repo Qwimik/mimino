@@ -13,7 +13,7 @@
   (min-resolution: 2dppx) {
   .details-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/img/main-page/homepage__bg-rest-details--mobile@2x.jpg);
+    url(/img/main-page/homepage__bg-rest-details--mobile@2x.jpg);
   }
 }
 
@@ -67,7 +67,7 @@
   margin-right: 19px !important;
 }
 .details-res-swiper-slide-thin {
-  width: 162px !important;
+  max-width: 162px !important;
 }
 .swiper-btn-list {
   display: flex;
