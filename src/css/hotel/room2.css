@@ -1,6 +1,13 @@
 .room2 {
     background-color: #F0ECD6;
   }
+  @media screen and (min-width: 1024px) {
+    .text_and_img--room2 {
+      flex-direction: row-reverse;
+      gap: 45px;
+    }
+  }
+
   .text__over-title--room2 {
     text-align: right;
   }
@@ -13,9 +20,27 @@
   .text__paragraph--room2 {
     padding: 0 59px 32px 83px;
   }
+  @media screen and (min-width: 1024px) {
+    .text__paragraph--room2 {
+      padding: 0;
+    }
+  }
+
   .room2__image {
     margin: 0 auto 34px 0;
   }
+  @media screen and (min-width: 1024px) {
+    .room2__image {
+      margin: -94px auto 48px 0;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .slider_and_buttons--room2 {
+      flex-direction: row-reverse;
+    }
+  }
+
   .slider-btn-position--room2 {
     margin-right: -15px;
   }
@@ -23,6 +48,13 @@
     width: 284px !important;
     margin-right: 0;
 }
+@media screen and (min-width: 1024px) {
+  .swiper.room2-swiper {
+    width: 428px !important;
+    margin-right: 0;
+  }
+}
+
 .room2__slider-btns {
     margin-right: 15px !important;
 }
