@@ -9,3 +9,12 @@ new Swiper('.mySwiper', {
     prevEl: '.button-prev',
   },
 });
+
+new Swiper('.room-hero-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  navigation: {
+    nextEl: '.btn-next',
+    prevEl: '.btn-prev',
+  },
+});

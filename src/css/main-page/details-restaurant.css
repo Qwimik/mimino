@@ -9,16 +9,14 @@
   padding-top: 24px;
 }
 @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .details-restaurant {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(/img/main-page/homepage__bg-rest-details--mobile@2x.jpg);
-    }
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/img/main-page/homepage__bg-rest-details--mobile@2x.jpg);
   }
+}
+
 .details-res-text {
   margin-left: 40px;
 }
@@ -52,7 +50,6 @@
   margin-top: 48px;
   /* margin-bottom: 32px; */
   margin-left: 25px;
-  
 }
 .details-res-swiper-wrapper {
   margin-bottom: 16px;
@@ -64,8 +61,8 @@
   margin-bottom: 32px;
 } */
 .details-res-swiper-slide {
- width: 274px !important;
- 
+  width: 274px !important;
+
   /* margin-bottom: 16px; */
   margin-right: 19px !important;
 }
@@ -77,7 +74,6 @@
   gap: 33px;
   margin-top: 16px;
   margin-bottom: 32px;
-  
 }
 /* .dishes-list {
   margin-top: 48px;
@@ -108,7 +104,6 @@
 .prev-pic-btn:active {
   fill: #f3c653;
 }
-
 
 .service-list {
   display: flex;
@@ -143,7 +138,6 @@
   .details-res-text {
     margin-left: 125px;
   }
-  
 }
 @media screen and (min-width: 1024px) {
   .details-restaurant {
@@ -151,9 +145,14 @@
       url(/img/main-page/homepage__bg-rest-details--tablet.jpg);
     padding-top: 48px;
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .details-restaurant {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
         url(/img/main-page/homepage__bg-rest-details--tablet@2x.jpg);
     }
   }
@@ -205,7 +204,6 @@
     order: 2;
   } */
   .details-res-swiper-slide {
-    
     margin-right: 34px !important;
   }
   .service-list {
@@ -243,6 +241,4 @@
   /* .dishes-list {
     gap: 100px;
   } */
-
-  
 }
