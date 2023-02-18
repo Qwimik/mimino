@@ -11,12 +11,12 @@ header {
 }
 .topline {
   margin-right: 52px;
-  font-family: 'FilmP3Bold', sans-serif;
+  font-family: "FilmP3Bold", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 39px;
   letter-spacing: 0.3em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 nav {
   display: flex;
@@ -27,7 +27,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.header-number{
+.header-number {
   display: flex;
 }
 
@@ -38,7 +38,7 @@ nav {
   padding-bottom: 30px;
 }
 .header-link {
-  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -69,7 +69,7 @@ nav {
 }
 .header-text {
   display: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 414px) {
@@ -82,7 +82,7 @@ nav {
     display: flex;
     align-items: center;
 
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: "Montserrat-Regular", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
