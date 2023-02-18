@@ -67,7 +67,7 @@
   margin-right: 19px !important;
 }
 .details-res-swiper-slide-thin {
-  width: 162px !important;
+  max-width: 162px !important;
 }
 .swiper-btn-list {
   display: flex;
