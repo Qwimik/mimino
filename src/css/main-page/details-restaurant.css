@@ -13,9 +13,10 @@
   (min-resolution: 2dppx) {
   .details-restaurant {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(/img/main-page/homepage__bg-rest-details--mobile@2x.jpg);
+    url(/img/main-page/homepage__bg-rest-details--mobile@2x.jpg);
   }
 }
+
 .details-res-text {
   margin-left: 40px;
 }
@@ -45,20 +46,44 @@
   letter-spacing: 0.02em;
   color: #bababa;
 }
-.swiper-wrap {
+.wrapper {
+  margin-top: 48px;
+}
+.details-res-swiper {
+  margin-top: 48px;
+  /* margin-bottom: 32px; */
+  margin-left: 25px;
+}
+.details-res-swiper-wrapper {
+  margin-bottom: 16px;
+  max-width: 880px !important;
+  height: 270px;
+}
+/* .swiper-wrap {
   margin-left: 15px;
   margin-bottom: 32px;
+} */
+.details-res-swiper-slide {
+  width: 274px !important;
+
+  /* margin-bottom: 16px; */
+  margin-right: 19px !important;
+}
+.details-res-swiper-slide-thin {
+  max-width: 162px !important;
 }
 .swiper-btn-list {
   display: flex;
   gap: 33px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
-.dishes-list {
+/* .dishes-list {
   margin-top: 48px;
   margin-bottom: 16px;
   display: flex;
   gap: 15px;
-}
+} */
 .dish-img {
   height: 270px;
 }
@@ -67,11 +92,12 @@
   width: 32px;
   height: 32px;
   border: none;
-  background-color: #bababa;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   fill: #ffffff;
+  transition: fill 250ms linear;
 }
 .next-pic-btn:hover,
 .next-pic-btn:focus,
@@ -103,6 +129,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  transition: border-color 250ms linear, background-color 250ms linear;
 }
 .service-btn:hover,
 .service-btn:focus {
@@ -155,26 +182,38 @@
     gap: 18px;
     margin-top: 40px;
   }
-  .swiper-wrap {
+  .swiper-btn-list {
+    margin-bottom: unset;
+  }
+  /* .swiper-wrap {
     direction: ltr;
     margin-bottom: unset;
     margin-left: unset;
+  } */
+  .details-res-swiper {
+    order: 2;
+    margin-left: unset;
+    /* margin-bottom: 40px; */
+    margin-top: unset;
   }
-  .dishes-list {
+  /* .dishes-list {
     gap: 20px;
     margin-bottom: 24px;
     margin-top: unset;
-  }
+  } */
 
-  .swiper-wrap {
+  /* .swiper-wrap {
     margin: unset;
     order: 2;
+  } */
+  .details-res-swiper-slide {
+    margin-right: 34px !important;
   }
-
   .service-list {
     order: 1;
     margin-top: auto;
     margin-bottom: 56px;
+    /* margin-left: 32px; */
   }
 }
 @media screen and (min-width: 1280px) {
@@ -193,10 +232,16 @@
         url(/img/main-page/homepage__bg-rest-details--desktop@2x.jpg);
     }
   }
+  .wrapper {
+    gap: 21px;
+  }
+  .details-res-swiper-slide {
+    margin-right: 86px !important;
+  }
   .details-res-text {
     margin-left: 338px;
   }
-  .dishes-list {
+  /* .dishes-list {
     gap: 100px;
-  }
+  } */
 }

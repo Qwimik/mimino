@@ -11,6 +11,7 @@
 @import url('./main-page/about-restaurant.css');
 @import url('./main-page/contacts.css');
 @import url('./main-page/details-restaurant.css');
+@import url('./main-page/details-hotel.css');
 @import url('./main-page/main-hero.css');
 /* restaurant-page */
 @import url('./restaurant-page/about-kitchen.css');
@@ -21,3 +22,4 @@
 @import url('./room-page/room-hero.css');
 
 @import url('./footer.css');
+@import url('./modal.css');

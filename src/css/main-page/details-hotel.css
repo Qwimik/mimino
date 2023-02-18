@@ -1,0 +1,93 @@
+.details-hotel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/img/main-page/homepage__bg-hotel-details--mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 40px;
+  padding-top: 24px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(/img/main-page/homepage__bg-hotel-details--mobile@2x.jpg);
+  }
+}
+.details-hotel-text {
+  margin-left: 17px;
+  width: 243px;
+}
+.hotel-img {
+  height: 270px;
+}
+.hotel-after-title-description {
+  width: 243px;
+}
+.hotel-logo-title,
+.hotel-after-logo-title {
+  text-align: right;
+}
+.details-hotel-swiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.hotel-swiper-wrap {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+}
+.hotel-service-list {
+    order: 2;
+}
+.hotel-swiper-btn-list {
+    display: flex;
+    margin-left: auto;
+    
+}
+@media screen and (min-width: 1024px) {
+    .details-hotel {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url(/img/main-page/homepage__bg-hotel-details--tablet.jpg);
+        padding-top: 48px;
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .details-hotel {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url(/img/main-page/homepage__bg-hotel-details--tablet@2x.jpg);
+            padding-top: 48px;
+        }
+      }
+    .details-hotel-text {
+        margin-left: 150px;
+        width: 549px;
+    }
+    .hotel-after-title-description {
+        width: 549px;
+    }
+
+}
+@media screen and (min-width: 1280px) {
+    .details-hotel {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url(/img/main-page/homepage__bg-hotel-details--desktop.jpg);
+        
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .details-hotel {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url(/img/main-page/homepage__bg-hotel-details--desktop@2x.jpg);
+            
+        }
+      }
+    .details-hotel-text {
+        margin-left: 262px;
+        width: 595px;
+    }
+    .hotel-after-title-description {
+        width: 595px;
+    }
+
+} 

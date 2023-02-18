@@ -1,0 +1,28 @@
+.room2 {
+    background-color: #F0ECD6;
+  }
+  .text__over-title--room2 {
+    text-align: right;
+  }
+  .text__logo--room2 {
+    text-align: right;
+  }
+  .text__title--room2 {
+    text-align: right;
+  }
+  .text__paragraph--room2 {
+    padding: 0 59px 32px 83px;
+  }
+  .room2__image {
+    margin: 0 auto 34px 0;
+  }
+  .slider-btn-position--room2 {
+    margin-right: -15px;
+  }
+  .swiper.room2-swiper {
+    width: 284px !important;
+    margin-right: 0;
+}
+.room2__slider-btns {
+    margin-right: 15px !important;
+}

@@ -1,66 +1,99 @@
-.topline{
-    margin-right: 52px;
-    font-family: 'FilmP3Bold', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 39px;
-    letter-spacing: 0.3em;
-    color: black;
+header {
+  background-color: transparent;
 }
-nav{
-    display: flex;
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.header-container{
-    position: relative;
-    
+.topline {
+  margin-right: 52px;
+  font-family: 'FilmP3Bold', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 39px;
+  letter-spacing: 0.3em;
+  color: black;
 }
-.header-menu{
-    display: flex;
-    
-}
-.header-navigation{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.header-link{
-    font-family: 'Montserrat-Regular', sans-serif;
-    font-weight: 700;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: #F3C653;
+nav {
+  display: flex;
 }
 
-.location{
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header-link {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  display: flex;
+  align-items: center;
+}
+
+.socials {
+  display: none;
+}
+.socials-list {
+  display: flex;
+  gap: 23px;
+}
+.contact-icon {
+  fill: #f3c653;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-phone {
+  fill: #f3c653;
+}
+.header-text {
+  display: none;
+}
+
+@media screen and (min-width: 414px) {
+}
+@media screen and (min-width: 1024px) {
+  .header-navigation {
+    gap: 72px;
+  }
+  .header-number {
     display: flex;
-    width: 210px;
     align-items: center;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
+
     font-family: 'Montserrat-Regular', sans-serif;
     font-weight: 400;
-    font-style: normal;
-    line-height: 15px;
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    background-color: black;
-    color:  #E5E5E5;
-
-
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding: 0 8px;
+  }
+  .header-link {
+    margin-right: 32px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header-text {
+    display: block;
+  }
 }
-.location-icon{
-   display: flex;
-   margin: 16px 10px;
-}
-address{
-    display: flex;
-    justify-content: flex-end;
-}
-.socials{
-    display:flex;
-    position: absolute;
-    left: 2vh;
-    bottom:-71vh;
+@media screen and (min-width: 1280px) {
+  .socials {
+    display: block;
+  }
 }

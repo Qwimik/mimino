@@ -1,72 +1,243 @@
 <section class="details-restaurant page-section">
-	<div class="container">
-		<!-- details-restaurant -->
-		<div class="details-res-text">
-			<h2 class="logo-title">mimiho</h2>
-			<h3 class="after-logo-title">Ресторан</h3>
-			<p class="after-title-description">
-				Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-				sint. Velit officia consequat duis enim velit mollit.
-			</p>
-		</div>
+  <div class="container">
+    <!-- details-restaurant -->
+    <div class="details-res-text">
+      <h2 class="logo-title">mimiho</h2>
+      <h3 class="after-logo-title">Ресторан</h3>
+      <p class="after-title-description">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
+      </p>
+    </div>
 
-		<div class="wrapper">
-			<!-- pererobyty slider -->
-			<div class="swiper-wrap">
-				<ul class="dishes-list">
-					<li>
-						<div class="thumb">
-							<img src="./img/main-page/restaurant__dishes-slider-01.jpg" srcset="
-                  ./img/main-page/restaurant__dishes-slider-01.jpg    1x,
-                  ./img/main-page/restaurant__dishes-slider-01@2x.jpg 2x
-                " alt="meal-pic-1" width="270" height="270" class="dish-img" />
-						</div>
-					</li>
-					<li>
-						<div class="thumb">
-							<img src="./img/main-page/restaurant__dishes-slider-02.jpg" srcset="
-                  ./img/main-page/restaurant__dishes-slider-02.jpg    1x,
-                  ./img/main-page/restaurant__dishes-slider-02@2x.jpg 2x
-                " alt="meal-pic-2" height="270" class="dish-img" />
-						</div>
-					</li>
-					<li>
-						<div class="thumb">
-							<img src="./img/main-page/restaurant__dishes-slider-03--desktop.jpg" srcset="
-                  ./img/main-page/restaurant__dishes-slider-03--desktop.jpg   1x,
-                  ./img/main-page/restaurant__dishes-slider-03@2--desktop.jpg
-                " alt="meal-pic-3" height="270" class="dish-img" />
-						</div>
-					</li>
-				</ul>
+    <div class="wrapper">
+      <div class="swiper details-res-swiper details-slider">
+        <div class="swiper-wrapper details-res-swiper-wrapper">
+          <div class="swiper-slide details-res-swiper-slide">
+            <div class="thumb">
+              <picture>
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./img/main-page/restaurant__dishes-slider-01--mobile.jpg    1x,
+                    ./img/main-page/restaurant__dishes-slider-01@2x--mobile.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-				<ul class="swiper-btn-list">
-					<!-- vstavyty svg -->
-					<li>
-						<button type="button" class="next-pic-btn">
-							<svg class="next-pic-btn-icon" width="32" height="32">
-								<use href=""></use>
-							</svg>
-						</button>
-					</li>
-					<li>
-						<button type="button" class="prev-pic-btn">
-							<svg class="prev-pic-btn-icon" width="32" height="32">
-								<use href=""></use>
-							</svg>
-						</button>
-					</li>
-				</ul>
-			</div>
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./img/main-page/restaurant__dishes-slider-01.jpg    1x,
+                    ./img/main-page/restaurant__dishes-slider-01@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
 
-			<ul class="service-list">
-				<li class="service-item">
-					<button type="button" class="service-btn">Забронювати столик</button>
-				</li>
-				<li class="service-item">
-					<a href="#" class="service-btn">Переглянути меню</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/main-page/restaurant__dishes-slider-01.jpg    1x,
+                    ./img/main-page/restaurant__dishes-slider-01@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./img/main-page/restaurant__dishes-slider-01.jpg"
+                  alt="meal-pic-1"
+                  height="270"
+                  class="dish-img"
+                />
+              </picture>
+            </div>
+          </div>
+          <div
+            class="swiper-slide details-res-swiper-slide details-res-swiper-slide-thin"
+          >
+            <div class="thumb">
+              <picture>
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./img/main-page/restaurant__dishes-slider-02.jpg    1x,
+                    ./img/main-page/restaurant__dishes-slider-02@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./img/main-page/restaurant__dishes-slider-02.jpg    1x,
+                    ./img/main-page/restaurant__dishes-slider-02@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/main-page/restaurant__dishes-slider-02.jpg    1x,
+                    ./img/main-page/restaurant__dishes-slider-02@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./img/main-page/restaurant__dishes-slider-02.jpg"
+                  alt="meal-pic-2"
+                  height="270"
+                  class="dish-img"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide details-res-swiper-slide">
+            <div class="thumb">
+              <picture>
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./img/main-page/restaurant__dishes-slider-03--tablet.jpg    1x,
+                    ./img/main-page/restaurant__dishes-slider-03@2x--tablet.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./img/main-page/restaurant__dishes-slider-03--tablet.jpg    1x,
+                    ./img/main-page/restaurant__dishes-slider-03@2x--tablet.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/main-page/restaurant__dishes-slider-03--desktop.jpg    1x,
+                    ./img/main-page/restaurant__dishes-slider-03@2x--desktop.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./img/main-page/restaurant__dishes-slider-03--desktop.jpg"
+                  alt="meal-pic-3"
+                  height="270"
+                  class="dish-img"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide details-res-swiper-slide">
+            <div class="thumb">
+              <picture>
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./img/restaurant-page/slider/restaurant__general-slider-01--mobile.jpg    1x,
+                    ./img/restaurant-page/slider/restaurant__general-slider-01--mobile@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./img/restaurant-page/slider/restaurant__general-slider-01--tablet.jpg    1x,
+                    ./img/restaurant-page/slider/restaurant__general-slider-01--tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/restaurant-page/slider/restaurant__general-slider-01--desktop.jpg    1x,
+                    ./img/restaurant-page/slider/restaurant__general-slider-01--desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./img/restaurant-page/slider/restaurant__general-slider-01--desktop.jpg"
+                  alt="meal-pic-4"
+                  height="270"
+                  class="dish-img"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide details-res-swiper-slide">
+            <div class="thumb">
+              <picture>
+                <source
+                  media="(max-width: 1023px)"
+                  srcset="
+                    ./img/restaurant-page/slider/restaurant__general-slider-02--mobile.jpg    1x,
+                    ./img/restaurant-page/slider/restaurant__general-slider-02--mobile@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(max-width: 1279px)"
+                  srcset="
+                    ./img/restaurant-page/slider/restaurant__general-slider-02--tablet.jpg    1x,
+                    ./img/restaurant-page/slider/restaurant__general-slider-02--tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/restaurant-page/slider/restaurant__general-slider-02--desktop.jpg    1x,
+                    ./img/restaurant-page/slider/restaurant__general-slider-02--desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./img/restaurant-page/slider/restaurant__general-slider-02--desktop.jpg"
+                  alt="meal-pic-5"
+                  height="270"
+                  class="dish-img"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-btn-list">
+          <div>
+            <button type="button" class="prev-pic-btn details-btn-prev">
+              <svg class="prev-pic-btn-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-Vector-left"></use>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <button type="button" class="next-pic-btn details-btn-next">
+              <svg class="next-pic-btn-icon" width="32" height="32">
+                <use href="./img/icons.svg#icon-Vector-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-list">
+        <div class="service-item">
+          <button type="button" class="service-btn">Забронювати столик</button>
+        </div>
+        <div class="service-item">
+          <a href="#" class="service-btn">Переглянути меню</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
