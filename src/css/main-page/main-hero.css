@@ -1,24 +1,23 @@
 /*============== MAIN HERO MOBILE ======= */
 .hero {
+  margin: 0 auto;
+  background-color: #fffdee;
+}
+
+.main-hero-wrap {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('/img/main-page/homepage__bg-hero--mobile.jpg');
   min-width: 320px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  background-color: #fffdee;
 }
 
-@media screen and (max-width: 1023px) {
-  .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('/img/main-page/homepage__bg-hero--mobile.jpg');
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
-  screen and (min-resolution: 192dpi) and (max-width: 1023px),
-  screen and (min-resolution: 2dppx) and (max-width: 1023px) {
-  .hero {
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .main-hero-wrap {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('/img/main-page/homepage__bg-hero--mobile@2x.jpg');
   }
@@ -169,16 +168,17 @@
 /*============== MAIN HERO TABLET ======= */
 
 @media screen and (min-width: 1024px) {
-  .hero {
+  .main-hero-wrap {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('/img/main-page/homepage__bg-hero--tablet.jpg');
+    max-width: 1024px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
   screen and (min-resolution: 192dpi) and (min-width: 1024px),
   screen and (min-resolution: 2dppx) and (min-width: 1024px) {
-  .hero {
+  .main-hero-wrap {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('/img/main-page/homepage__bg-hero--tablet@2x.jpg');
   }
@@ -238,16 +238,17 @@
 
 /*============== MAIN HERO DESKTOP ======= */
 @media screen and (min-width: 1280px) {
-  .hero {
+  .main-hero-wrap {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('/img/main-page/homepage__bg-hero--desktop.jpg');
+    max-width: 1280px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
   screen and (min-resolution: 192dpi) and (min-width: 1280px),
   screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-  .hero {
+  .main-hero-wrap {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url('/img/main-page/homepage__bg-hero--desktop@2x.jpg');
   }
