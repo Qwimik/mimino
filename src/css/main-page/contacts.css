@@ -50,23 +50,31 @@
   fill: #c79002;
   align-items: center;
 }
-.rest-tel {
+.hotel-icon {
+  margin-bottom: -15px;
+}
+.second-hotel-tel {
+  margin-left: 25px;
+}
+
+.contacts-link-rest-tel {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
-
 .hotel-tel {
   margin-left: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
 }
 .two-tel {
   display: flex;
   flex-direction: column;
+}
+.contacts-link-hotel-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 .contacts-link-hotel-tel:not(:last-child) {
   margin-right: 7px;
@@ -93,9 +101,10 @@
   border-radius: 2px;
   margin-left: 124px;
   margin-bottom: 32px;
+}
+.contacts-address-link {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
 }
 .map {
@@ -116,6 +125,12 @@
   }
   .two-tel {
     flex-direction: row;
+  }
+  .hotel-icon {
+    margin-bottom: 0px;
+  }
+  .second-hotel-tel {
+    margin-left: 0px;
   }
   .map {
     width: 384px;
