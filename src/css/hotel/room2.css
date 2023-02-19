@@ -79,12 +79,28 @@
   }
 }
 
-.room2__slider-btns {
-    margin-right: 15px !important;
+.room2__slider-btns-first {
+  margin-left: auto !important;
 }
 @media screen and (min-width: 1024px) {
+  .room2__slider-btns-first {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .room2__slider-btns-second {
+    margin-right: auto !important;
+  }
+}
+
+.room2__slider-btns {
+  display: flex;
+  margin-right: 15px !important;
+}
+/* @media screen and (min-width: 1024px) {
   .room2__slider-btns {
     margin-right: auto !important;
     margin-left: 0 !important;
   }
-}
+} */
