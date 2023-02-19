@@ -41,6 +41,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
 }
 .footer-list {
   display: flex;
@@ -90,10 +91,12 @@ footer {
 .link-text:hover {
   color: #c79002;
 }
-
+.link {
+  display: none;
+}
 @media screen and (min-width: 414px) {
-  .link {
-    display: none;
+  .footer-navigation {
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -101,7 +104,7 @@ footer {
     padding-top: 37px;
   }
   .footer-container {
-    padding: 80px 122px 80px 154px;
+    padding: 80px 90px 80px 122px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
