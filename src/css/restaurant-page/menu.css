@@ -41,7 +41,7 @@
 
 
     
-    .menu-list{
+    .menu-block{
         max-height: 625px;
         display: flex;
         flex-direction: column;
@@ -51,6 +51,7 @@
      }
 
 }
+
 
 
 
@@ -82,9 +83,14 @@
 
     @media screen and (min-width:1024px) {
         .menu-subtitle{
+           
             margin-bottom: 20px;
         }
+         .menu-item{
+            flex: 1 0 auto;
+         }
     }
+
 
     @media screen and (min-width:1280px) {
         .menu-subtitle{
@@ -92,24 +98,19 @@
         }
     }
 
-     .menu-type {
-        margin-bottom: 8px;
-     }
+     
 
-     .menu-type:last-child{
-        margin-bottom: 0;
-     }
+    
 
-     @media screen and (min-width:1280px) {
-        .menu-type{
-            margin-bottom: 12px;
-        }
-
+      @media screen and (min-width:1024) {
         .menu-type:last-child{
-            margin-bottom: 0;
+            margin-bottom: 20px;
         }
+     } 
 
- }
+     
+
+    
     
 
 .dish-name{
@@ -143,6 +144,8 @@
 
 
 
+
+
 .dish-weight{
     font-family: 'Montserrat-Light';
     font-style: normal;
@@ -172,7 +175,7 @@
         line-height: 1.21;
         color: #000000;
         letter-spacing: 0.02em;
-        margin-bottom: 8px;
+        /* margin-bottom: 8px; */
 }
 
 @media screen and (min-width:1280px) {
@@ -190,16 +193,27 @@
     align-items: center;
 }
 
+.menu-type{
+    margin-bottom: 8px;
+}
+
 @media screen and (min-width:1024px) {
 
     .menu-type{
         max-width: 411px;
+        
 
     }
+
+       
     .menu-info {
         justify-content: space-between;
     }
 }
+
+
+
+
 .menu-button{
     display: block;
     justify-content: center;
@@ -223,9 +237,10 @@
 }
 
     @media screen and (min-width:1024px) {
-        .menu-type{
+        /* .menu-type{
             max-width: 485px;
-        }
+        } */
+
         .menu-button{
         display: block;
         margin: 0;
