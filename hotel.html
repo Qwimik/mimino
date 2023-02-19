@@ -18,7 +18,7 @@
     />
     
     <script type="module" crossorigin src="/mimino/assets/modal-a267b7f7.js"></script>
-    <link rel="stylesheet" href="/mimino/assets/modal-4d444523.css">
+    <link rel="stylesheet" href="/mimino/assets/modal-f7459c8b.css">
   </head>
   <body>
     <!--Назар Крюк-->
@@ -179,7 +179,7 @@
           veniam consequat sunt nostrud amet.
         </p>
       </div>
-      <div class="thumb room1-hero-img">
+      <div class="thumb">
         <picture>
           <source
             media="(max-width: 1023px)"
@@ -210,11 +210,11 @@
     <div class="slider_and_buttons">
       <div class="room__slider-position">
         <div class="slider-btn-position slider-btn-position--room1">
-          <div class="swiper mySwiper about-swiper room1-swiper">
-            <div class="swiper-wrapper">
+          <div class="swiper mySwiper about-swiper slider-viewport--room slider-viewport--room1">
+            <div class="swiper-wrapper room1-swiper">
               <div class="swiper-slide swiper-slide__img swiper-slide--rooms">
                 <div class="thumb room-img-width">
-                  <picture>
+                  <picture >
                     <source
                       media="(max-width: 1023px)"
                       srcset="/mimino/assets/hotel__room1-slider-01--mobile-e9a3cda9.jpg 1x, /mimino/assets/hotel__room1-slider-01--mobile@2x-814f096b.jpg 2x"
@@ -223,10 +223,7 @@
 
                     <source
                       media="(max-width: 1279px)"
-                      srcset="
-                        ./img/hotel/slider/hotel__room1-slider-01----tablet.jpg  1x,
-                        ./img/hotel/slider/hotel__room1-slider-01--tablet@2x.jpg 2x
-                      "
+                      srcset="/mimino/assets/hotel__room1-slider-01--mobile-e9a3cda9.jpg 1x, /mimino/assets/hotel__room1-slider-01--mobile@2x-814f096b.jpg 2x"
                       type="image/jpeg"
                     />
 
@@ -254,10 +251,7 @@
 
                     <source
                       media="(max-width: 1279px)"
-                      srcset="
-                        ./img/hotel/slider/hotel__room1-slider-02----tablet.jpg  1x,
-                        ./img/hotel/slider/hotel__room1-slider-02--tablet@2x.jpg 2x
-                      "
+                      srcset="/mimino/assets/hotel__room1-slider-02--mobile-72f773d7.jpg 1x, /mimino/assets/hotel__room1-slider-02--mobile@2x-64f62a35.jpg 2x"
                       type="image/jpeg"
                     />
 
@@ -285,10 +279,7 @@
 
                     <source
                       media="(max-width: 1279px)"
-                      srcset="
-                        ./img/hotel/slider/hotel__room-slider-03----tablet.jpg  1x,
-                        ./img/hotel/slider/hotel__room-slider-03--tablet@2x.jpg 2x
-                      "
+                      srcset="/mimino/assets/hotel__room-slider-03--tablet-5015cdea.jpg 1x, /mimino/assets/hotel__room-slider-03--tablet@2x-8ea74676.jpg 2x"
                       type="image/jpeg"
                     />
 
@@ -316,10 +307,7 @@
 
                     <source
                       media="(max-width: 1279px)"
-                      srcset="
-                        ./img/hotel/slider/hotel__room-slider-04----tablet.jpg  1x,
-                        ./img/hotel/slider/hotel__room-slider-04--tablet@2x.jpg 2x
-                      "
+                      srcset="/mimino/assets/hotel__room-slider-04--tablet-45bd7ce7.jpg 1x, /mimino/assets/hotel__room-slider-04--tablet@2x-6d1daf4b.jpg 2x"
                       type="image/jpeg"
                     />
 
@@ -336,23 +324,6 @@
                   </picture>
                 </div>
               </div>
-              <!-- 
-                            <div class="swiper-slide swiper-slide__img swiper-slide--rooms">
-                                <div class="thumb room-img-width">
-                                    <img class="" src="./img/hotel/slider/hotel__room1-slider-01--mobile.jpg" srcset="
-                                    ./img/hotel/slider/hotel__room1-slider-01--mobile.jpg    1x,
-                                    ./img/hotel/slider/hotel__room1-slider-01--mobile@2x.jpg 2x
-                      " alt="hotel__room1-slider-01" />
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide__img swiper-slide--rooms">
-                                <div class="thumb room-img-width">
-                                    <img class="" src="./img/hotel/slider/hotel__room1-slider-02--mobile.jpg" srcset="
-                                    ./img/hotel/slider/hotel__room1-slider-02--mobile.jpg    1x,
-                                    ./img/hotel/slider/hotel__room1-slider-02--mobile@2x.jpg 2x
-                      " alt="hotel__room1-slider-02" />
-                                </div>
-                            </div> -->
             </div>
             <div class="slider-btns room__slider-btns room1__slider-btns">
               <div class="button-prev btn">
@@ -380,9 +351,9 @@
         </div>
       </div>
       <ul class="room__buttons">
-        <li><button class="room__button" type="button">Детальніше</button></li>
+        <li><a class="room__button" href="./mimiho/room">Детальніше</a></li>
         <li>
-          <button class="room__button" type="button">Переглянути ціни</button>
+          <button class="room__button js-open-modal" data-modal="3" type="button">Переглянути ціни</button>
         </li>
       </ul>
     </div>
@@ -422,8 +393,8 @@
       <div class="slider_and_buttons slider_and_buttons--room2">
         <div class="room__slider-position">
             <div class="slider-btn-position slider-btn-position--room2">
-                <div class="swiper mySwiper about-swiper room2-swiper" >
-                    <div class="swiper-wrapper">
+                <div class="swiper mySwiper about-swiper slider-viewport--room slider-viewport--room2" >
+                    <div class="swiper-wrapper room2-swiper">
                         <div class="swiper-slide swiper-slide__img swiper-slide--rooms">
                             <div class="thumb room-img-width">
                                 <picture>
@@ -432,7 +403,7 @@
                                         type="image/jpeg" />
     
                                     <source media="(max-width: 1279px)"
-                                        srcset="./img/hotel/slider/hotel__room2-slider-01----tablet.jpg 1x, ./img/hotel/slider/hotel__room2-slider-01--tablet@2x.jpg 2x"
+                                        srcset="/mimino/assets/hotel__room2-slider-01--mobile-6ace6890.jpg 1x, /mimino/assets/hotel__room2-slider-01--mobile@2x-c3d2da1c.jpg 2x"
                                         type="image/jpeg" />
     
                                     <source media="(min-width: 1280px)"
@@ -440,7 +411,7 @@
                                         type="image/jpeg" />
     
                                     <img src="/mimino/assets/hotel__room2-slider-01--desktop-f39600dd.jpg"
-                                        alt="Умивальник та рушники" />
+                                        alt="Ванна кімната" />
                                 </picture>
                             </div>
                         </div>
@@ -452,7 +423,7 @@
                                         type="image/jpeg" />
     
                                     <source media="(max-width: 1279px)"
-                                        srcset="./img/hotel/slider/hotel__room2-slider-02----tablet.jpg 1x, ./img/hotel/slider/hotel__room2-slider-02--tablet@2x.jpg 2x"
+                                        srcset="/mimino/assets/hotel__room2-slider-02--mobile-3442572a.jpg 1x, /mimino/assets/hotel__room2-slider-02--mobile@2x-27733177.jpg 2x"
                                         type="image/jpeg" />
     
                                     <source media="(min-width: 1280px)"
@@ -460,7 +431,7 @@
                                         type="image/jpeg" />
     
                                     <img src="/mimino/assets/hotel__room2-slider-02--desktop-ff557275.jpg"
-                                        alt="Чашка кави на підвіконні" />
+                                        alt="Зал у номері" />
                                 </picture>
                             </div>
                         </div>
@@ -472,7 +443,7 @@
                                         type="image/jpeg" />
     
                                     <source media="(max-width: 1279px)"
-                                        srcset="./img/hotel/slider/hotel__room-slider-03----tablet.jpg 1x, ./img/hotel/slider/hotel__room-slider-03--tablet@2x.jpg 2x"
+                                        srcset="/mimino/assets/hotel__room-slider-03--tablet-5015cdea.jpg 1x, /mimino/assets/hotel__room-slider-03--tablet@2x-8ea74676.jpg 2x"
                                         type="image/jpeg" />
     
                                     <source media="(min-width: 1280px)"
@@ -492,7 +463,7 @@
                                         type="image/jpeg" />
     
                                     <source media="(max-width: 1279px)"
-                                        srcset="./img/hotel/slider/hotel__room-slider-04----tablet.jpg 1x, ./img/hotel/slider/hotel__room-slider-04--tablet@2x.jpg 2x"
+                                        srcset="/mimino/assets/hotel__room-slider-04--tablet-45bd7ce7.jpg 1x, /mimino/assets/hotel__room-slider-04--tablet@2x-6d1daf4b.jpg 2x"
                                         type="image/jpeg" />
     
                                     <source media="(min-width: 1280px)"
@@ -558,8 +529,8 @@
         <div class="slider_and_buttons">
             <div class="room__slider-position">
                 <div class="slider-btn-position slider-btn-position--room1">
-                    <div class="swiper mySwiper about-swiper room1-swiper">
-                        <div class="swiper-wrapper">
+                    <div class="swiper mySwiper about-swiper slider-viewport--room slider-viewport--room1">
+                        <div class="swiper-wrapper room1-swiper">
                             <div class="swiper-slide swiper-slide__img swiper-slide--rooms">
                                 <div class="thumb room-img-width">
                                     <picture>
@@ -568,7 +539,7 @@
                                             type="image/jpeg" />
         
                                         <source media="(max-width: 1279px)"
-                                            srcset="./img/hotel/slider/hotel__room3-slider-01----tablet.jpg 1x, ./img/hotel/slider/hotel__room3-slider-01--tablet@2x.jpg 2x"
+                                            srcset="/mimino/assets/hotel__room3-slider-01--mobile-1b5d3ef0.jpg 1x, /mimino/assets/hotel__room3-slider-01--mobile@2x-37d54d90.jpg 2x"
                                             type="image/jpeg" />
         
                                         <source media="(min-width: 1280px)"
@@ -576,7 +547,7 @@
                                             type="image/jpeg" />
         
                                         <img src="/mimino/assets/hotel__room3-slider-01--desktop-739bf2df.jpg"
-                                            alt="Умивальник та рушники" />
+                                            alt="Простора вітальня з панорамними вікнами" />
                                     </picture>
                                 </div>
                             </div>
@@ -588,7 +559,7 @@
                                             type="image/jpeg" />
         
                                         <source media="(max-width: 1279px)"
-                                            srcset="./img/hotel/slider/hotel__room3-slider-02----tablet.jpg 1x, ./img/hotel/slider/hotel__room3-slider-02--tablet@2x.jpg 2x"
+                                            srcset="/mimino/assets/hotel__room3-slider-02--mobile-62cb88e1.jpg 1x, /mimino/assets/hotel__room3-slider-02--mobile@2x-6b59d6da.jpg 2x"
                                             type="image/jpeg" />
         
                                         <source media="(min-width: 1280px)"
@@ -596,7 +567,7 @@
                                             type="image/jpeg" />
         
                                         <img src="/mimino/assets/hotel__room3-slider-02--desktop-b2cf826a.jpg"
-                                            alt="Чашка кави на підвіконні" />
+                                            alt="Рукомийник та настінне дзеркало у ванній" />
                                     </picture>
                                 </div>
                             </div>
@@ -608,7 +579,7 @@
                                             type="image/jpeg" />
         
                                         <source media="(max-width: 1279px)"
-                                            srcset="./img/hotel/slider/hotel__room-slider-03----tablet.jpg 1x, ./img/hotel/slider/hotel__room-slider-03--tablet@2x.jpg 2x"
+                                            srcset="/mimino/assets/hotel__room-slider-03--tablet-5015cdea.jpg 1x, /mimino/assets/hotel__room-slider-03--tablet@2x-8ea74676.jpg 2x"
                                             type="image/jpeg" />
         
                                         <source media="(min-width: 1280px)"
@@ -628,7 +599,7 @@
                                             type="image/jpeg" />
         
                                         <source media="(max-width: 1279px)"
-                                            srcset="./img/hotel/slider/hotel__room-slider-04----tablet.jpg 1x, ./img/hotel/slider/hotel__room-slider-04--tablet@2x.jpg 2x"
+                                            srcset="/mimino/assets/hotel__room-slider-04--tablet-45bd7ce7.jpg 1x, /mimino/assets/hotel__room-slider-04--tablet@2x-6d1daf4b.jpg 2x"
                                             type="image/jpeg" />
         
                                         <source media="(min-width: 1280px)"
