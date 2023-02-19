@@ -36,6 +36,13 @@
   max-width: 210px;
   margin-left: auto;
   margin-bottom: 70px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-map-place-wrapper:hover {
+  border: 1px solid #c79002;
 }
 
 .hero-map-place {
@@ -49,6 +56,13 @@
   fill: #f3c653;
   width: 20px;
   height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-map-place-wrapper:hover .hero-map-icon {
+  fill: #c79002;
 }
 
 .hero-main-title {
@@ -64,6 +78,12 @@
   margin-right: auto;
   margin-bottom: 24px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 413px) {
+  .hero-main-title {
+    font-size: 87px;
+  }
 }
 
 .hero-subtitle {

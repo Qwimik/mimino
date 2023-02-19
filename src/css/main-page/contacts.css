@@ -43,30 +43,47 @@
   padding-right: 8px;
   padding-top: 12px;
   padding-bottom: 11px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.rest-tel{
   margin-left: 22px;
 }
+.contacts-text-link:hover{
+  border: 0.5px solid #c79002; 
+}
+
 .contacts-icon {
   min-width: 24px;
   fill: #c79002;
   align-items: center;
 }
-.rest-tel {
+.hotel-icon {
+  margin-bottom: -15px;
+}
+.second-hotel-tel {
+  margin-left: 25px;
+}
+
+.contacts-link-rest-tel {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
-
 .hotel-tel {
   margin-left: 54px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
 }
 .two-tel {
   display: flex;
   flex-direction: column;
+}
+.contacts-link-hotel-tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 .contacts-link-hotel-tel:not(:last-child) {
   margin-right: 7px;
@@ -78,7 +95,7 @@
 .contacts-item:not(:last-child) {
   margin-bottom: 16px;
 }
-.contacts-address {
+.contacts-address-link {
   font-family: 'Montserrat-Regular', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -93,11 +110,19 @@
   border-radius: 2px;
   margin-left: 124px;
   margin-bottom: 32px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-address-link {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
 }
+.contacts-address-link:hover{
+  border: 0.5px solid #c79002; 
+}
+
 .map {
   min-width: 290px;
   height: 220px;
@@ -117,10 +142,16 @@
   .two-tel {
     flex-direction: row;
   }
+  .hotel-icon {
+    margin-bottom: 0px;
+  }
+  .second-hotel-tel {
+    margin-left: 0px;
+  }
   .map {
     width: 384px;
   }
-  .contacts-address {
+  .contacts-address-link {
     padding-right: 33px;
   }
 }
@@ -170,7 +201,7 @@
     margin-bottom: 48px;
   }
 
-  .contacts-address {
+  .contacts-address-link {
     margin-left: 0;
     width: 285px;
     padding-right: 8px;
@@ -207,7 +238,7 @@
   .contacts-text-link {
     color: #828282;
   }
-  .contacts-address {
+  .contacts-address-link {
     color: #828282;
   }
   .map {
