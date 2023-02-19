@@ -6,11 +6,11 @@ header {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding-top: 30px;
+  
   z-index: 999;
 }
 .topline {
-  margin-right: 52px;
+  
   font-family: "FilmP3Bold", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -34,8 +34,7 @@ nav {
 .header-navigation {
   display: flex;
   gap: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  
 }
 .header-link {
   font-family: "Montserrat-Regular", sans-serif;
@@ -62,7 +61,7 @@ nav {
 .header-list {
   display: flex;
   align-items: center;
-  gap: 23px;
+  gap: 12px;
 }
 .header-phone {
   fill: #f3c653;
@@ -73,8 +72,14 @@ nav {
 }
 
 @media screen and (min-width: 414px) {
+  .header-menu{
+    padding-top: 16px;
+  }
 }
 @media screen and (min-width: 1024px) {
+  .header-menu{
+    padding-top: 30px;
+  }
   .header-navigation {
     gap: 72px;
   }
@@ -98,6 +103,10 @@ nav {
   }
   .header-text {
     display: block;
+  }
+  .header-list {
+   
+    gap: 12px;
   }
 }
 @media screen and (min-width: 1280px) {
