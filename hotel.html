@@ -18,7 +18,7 @@
     />
     
     <script type="module" crossorigin src="/mimino/assets/modal-f9d25db3.js"></script>
-    <link rel="stylesheet" href="/mimino/assets/modal-f01c5975.css">
+    <link rel="stylesheet" href="/mimino/assets/modal-b88ecf55.css">
   </head>
   <body>
     <!--Назар Крюк-->
@@ -690,8 +690,9 @@
 
 
     <!--Oleksii Rozhnenko-->
-    <div class="backdrop is-hidden" data-modal>
-  <div class="modal modal-open">
+    <!-- * <<<=============== Modal window Book Table ===================>>>* -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
     <button class="modal-close-btn" type="button" data-modal-close>
       <svg class="icon-x" width="18" height="18">
         <use href="/mimino/assets/icons-cad88784.svg#icon-close"></use>
@@ -724,12 +725,14 @@
           > </div></div>
         <div class="fixed">
           <div class="modal-position-icon">
+            <div class="select-icon-pocition">
           <select class="modal-input modal-select" id="number" name="number">
             <option value="2" selected>2</option>
             <option value="5">5</option>
             <option value="10">10</option>
             <option value="15">15</option>
           </select>
+            </div>
           <label for="size" class="form-lable"><span class="label-title"
               >Столик на яку кількість осіб?</span
             ></label
@@ -751,10 +754,10 @@
   </div>
 </div>
 
-<!-- * <<<=============== Modal window Book Room===================>>>* -->
+<!-- * <<<=============== Modal window Book Room ===================>>>* -->
 
 <div class="backdrop-room is-hidden" data-book-room-modal>
-  <div class="modal-room modal-open">
+  <div class="modal-room">
     <button class="modal-close-btn-room" type="button" data-book-room-modal-close>
       <svg class="icon-x" width="18" height="18">
         <use href="/mimino/assets/icons-cad88784.svg#icon-close"></use>
@@ -763,30 +766,30 @@
     <p class="title-modal-room"><strong>ЗАБРОНЮВАТИ НОМЕР</strong></p>
     <form class="modal-form-room">
       <div class="fixed-room-room">
-        <div class="modal-position-icon-room">
+        <div class="contact">
+        <div class="modal-position-room">
           <input class="modal-input-room" id="user-name" type="text" name="name" placeholder="Ваше ім’я"
             pattern="[A-Za-zА-Яа-яЁё]{2,20}" required />
           <label for="user-name" class="form-lable-room"><span class="label-title-room">На кого забронювати номер?</span></label>
         </div>
-        <div class="modal-position-icon-room">
+        <div class="modal-position-room">
           <input class="modal-input-room" id="user-tel" type="tel" name="tel" placeholder="+38 (___) ___-__-__"
             pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required />
           <label for="user-number" class="form-lable-room"><span class="label-title-room">Номер телефону</span></label>
         </div>
       </div>
+    </div>
       <div class="fixed-room">
-        <div class="modal-position-icon-room">
+        <div class="modal-position-room select-position-room lux">
           <select class="modal-input-room modal-select-room" id="number" name="number">
-            <option value="2" selected>Двомісний люкс</option>
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
+            <option value="Двомісний люкс" selected>Двомісний люкс</option>
+            <option value="Двомісний номер">Двомісний</option>
+            <option value="Трьохмісний номер">Трьохмісний</option>
           </select>
-          <label for="size" class="form-lable-room"><span class="label-title-room">Категорія номеру осіб?</span></label>
+          <label for="size" class="form-lable-room"><span class="label-title-room">Категорія номеру</span></label>
         </div>
           <div class="fixed-room">
-        
-        <div class="modal-position-icon-room select-position-room">
+        <div class="contact"><div class="modal-position-room select-position-room">
           <select class="modal-input-room modal-select-room" name="day" id="day">
             <optgroup label="Сьогодні">
               <option class="option" value="Сьогодні" selected>Сьогодні</option>
@@ -796,7 +799,7 @@
           </select>
           <label for="user-data" class="form-lable-room"><span class="label-title-room">Дата заїзду</span></label>
         </div>
-        <div class="modal-position-icon-room select-position-room">
+        <div class="modal-position-room select-position-room">
           <select class="modal-input-room modal-select-room" name="day" id="day">
             <optgroup label="Сьогодні">
               <option class="option" value="Сьогодні" selected>Сьогодні</option>
@@ -807,6 +810,7 @@
           <label for="user-data" class="form-lable-room"><span class="label-title-room">Дата виїзду</span></label>
         </div>
       </div>
+    </div>
       <button type="submit" class="modal-button-room">
         ОФОРМИТИ БРОНЮВАННЯ
       </button>
