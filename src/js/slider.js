@@ -1,5 +1,5 @@
 new Swiper('.mySwiper', {
-  slidesPerView: 2,
+  slidesPerView: 'auto',
   spaceBetween: 25,
   freeMode: true,
   breakpointsBase: 'container',
