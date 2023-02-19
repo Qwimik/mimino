@@ -6,12 +6,10 @@ header {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  
   z-index: 999;
 }
 .topline {
-  
-  font-family: "FilmP3Bold", sans-serif;
+  font-family: 'FilmP3Bold', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 39px;
@@ -27,17 +25,29 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+.header-phone {
+  fill: #f3c653;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-number {
   display: flex;
+}
+.header-number:hover {
+  border: 1px solid #c79002;
+}
+.header-number:hover > .header-phone {
+  fill: #c79002;
 }
 
 .header-navigation {
   display: flex;
   gap: 20px;
-  
 }
 .header-link {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: 'Montserrat-Regular', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -45,6 +55,12 @@ nav {
   color: #f3c653;
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-link:hover {
+  color: #c79002;
 }
 
 .socials {
@@ -56,6 +72,12 @@ nav {
 }
 .contact-icon {
   fill: #f3c653;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-icon:hover {
+  fill: #c79002;
 }
 
 .header-list {
@@ -63,21 +85,19 @@ nav {
   align-items: center;
   gap: 12px;
 }
-.header-phone {
-  fill: #f3c653;
-}
+
 .header-text {
   display: none;
   color: #ffffff;
 }
 
 @media screen and (min-width: 414px) {
-  .header-menu{
+  .header-menu {
     padding-top: 16px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .header-menu{
+  .header-menu {
     padding-top: 30px;
   }
   .header-navigation {
@@ -87,7 +107,7 @@ nav {
     display: flex;
     align-items: center;
 
-    font-family: "Montserrat-Regular", sans-serif;
+    font-family: 'Montserrat-Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -96,6 +116,7 @@ nav {
     border-radius: 2px;
     padding: 0 8px;
   }
+
   .header-link {
     margin-right: 32px;
     font-size: 20px;
@@ -105,7 +126,6 @@ nav {
     display: block;
   }
   .header-list {
-   
     gap: 12px;
   }
 }
