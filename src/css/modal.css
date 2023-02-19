@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
   height: 100%;
 
@@ -26,16 +26,15 @@
   width: 100%;
   max-width: 414px;
   max-height: 668px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
 
-  transform: translate(-50%, -50%) scale(1);
-  transition: tranform 300ms linear;
+  /* transform: translate(-50%, -50%) scale(1); */
+  /* transition: tranform 300ms linear; */
   padding: 15px;
   background-color: #fffdee;
   border-radius: 2px;
-
 }
 body.modal-open {
   overflow: hidden;
@@ -70,7 +69,6 @@ body.modal-open {
   text-align: center;
   margin-bottom: 40px;
   margin-top: 27px;
-
 }
 
 .comment {
@@ -95,10 +93,8 @@ body.modal-open {
   margin-bottom: 8px;
   letter-spacing: 0.05em;
   padding-left: 12px;
-
 }
-.modal-select{
- 
+.modal-select {
   width: 100%;
   height: 54px;
   background-color: transparent;
@@ -112,13 +108,13 @@ body.modal-open {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: "";
+  text-overflow: '';
 }
 
-.select-icon-position{
-  position:relative;
+.select-icon-position {
+  position: relative;
 }
-.select-icon-position::after{
+.select-icon-position::after {
   content: '';
   width: 24px;
   height: 24px;
@@ -130,8 +126,7 @@ body.modal-open {
   transform: translate(-50%, -50%);
   transition: tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  background: url("./img/modal/untitled.svg") 0 0 / 100% no-repeat;
-
+  background: url('./img/modal/untitled.svg') 0 0 / 100% no-repeat;
 }
 .select-icon-position:focus-within::after {
   transform: translate(-50%, -50%) rotate(180deg);
@@ -139,84 +134,75 @@ body.modal-open {
 
 /*=== icons================================ > */
 
-
-.label-title{
- color: #C79002;
- margin-left: 27px;
-
+.label-title {
+  color: #c79002;
+  margin-left: 27px;
 }
 
-.modal-form-button{
+.modal-form-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 43px;
   font-size: 20px;
   font-weight: 'Montserrat';
-  line-height: 0,83;
+  line-height: 0, 83;
   text-align: center;
-  color:#FFFFFF;
+  color: #ffffff;
   background: #000000;
-  border: 1px solid #F3C653;
+  border: 1px solid #f3c653;
   border-radius: 2px;
   margin-top: 20px;
   margin-bottom: 45px;
-  letter-spacing: 0,02px;
+  letter-spacing: 0, 02px;
 }
-.modal-position-icon{
+.modal-position-icon {
   margin-bottom: 20px;
-
-} 
-.select-position{
+}
+.select-position {
   margin-bottom: 40px;
 }
 
-
 /* =============== media screen ===================*/
- @media screen and (min-width: 1024px) 
-{ 
+@media screen and (min-width: 1024px) {
   .modal {
-  max-width: 712px;
-  max-height: 522px;
-  padding-bottom: 0px;
-  /* overflow: scroll; */
-
+    max-width: 712px;
+    max-height: 522px;
+    padding-bottom: 0px;
+    /* overflow: scroll; */
   }
-  .title-modal{
+  .title-modal {
     font-size: 40px;
     line-height: 0.87;
     letter-spacing: 0.05em;
   }
 
-
-  .modal-position-icon{
+  .modal-position-icon {
     min-width: 288px;
   }
 
-  .modal-form-button{
-  font-size:24px;
-  line-height: 0,82;
-  width: 592px;
-  height: 64px;
-  margin-top: 0px;
-  margin-bottom: 60px;
-
-}
- .modal-form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-
+  .modal-form-button {
+    font-size: 24px;
+    line-height: 0, 82;
+    width: 592px;
+    height: 64px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+  }
+  .modal-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
 
- .modal-position-icon{
-  margin-bottom: 28px;
-} 
- .modal-input{
-  font-size: 24px;
-  line-height: 0,87;
-}
+  .modal-position-icon {
+    margin-bottom: 28px;
+  }
+  .modal-input {
+    font-size: 24px;
+    line-height: 0, 87;
+  }
 }
 
 /* <<<============== Modal window Book Room ===============>>>*/
@@ -225,7 +211,7 @@ body.modal-open {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
   height: 100%;
 
@@ -248,16 +234,15 @@ body.modal-open {
   width: 100%;
   max-width: 414px;
   max-height: 780px;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: tranform 300ms linear;
+  transition: tranform 300ms linear; */
   padding: 15px;
   background-color: #fffdee;
   border-radius: 2px;
-
 }
 body.modal-open {
   overflow: hidden;
@@ -292,7 +277,6 @@ body.modal-open {
   text-align: center;
   margin-bottom: 40px;
   margin-top: 27px;
-
 }
 
 .comment-room {
@@ -317,11 +301,8 @@ body.modal-open {
   margin-bottom: 8px;
   letter-spacing: 0.05em;
   padding-left: 12px;
-
-
 }
-.modal-select-room{
- 
+.modal-select-room {
   width: 100%;
   height: 54px;
   background-color: transparent;
@@ -329,78 +310,73 @@ body.modal-open {
   border-radius: 5px;
   margin-bottom: 8px;
 }
-.label-title-room{
- color: #C79002;
- margin-left: 27px;
-
+.label-title-room {
+  color: #c79002;
+  margin-left: 27px;
 }
-.modal-position-room
-{margin-bottom: 20px;}
+.modal-position-room {
+  margin-bottom: 20px;
+}
 
-.modal-button-room{
+.modal-button-room {
   display: block;
   margin-left: auto;
   margin-right: auto;
   min-width: 384px;
   height: 64px;
   padding: 20px 43px;
-  
+
   font-size: 20px;
 
   text-align: center;
-  color:#FFFFFF;
+  color: #ffffff;
   background: #000000;
-  border: 1px solid #F3C653;
+  border: 1px solid #f3c653;
   border-radius: 2px;
   margin-top: 40px;
   margin-bottom: 60px;
-
 }
 
 /* =============== media screen ===================*/
- @media screen and (min-width: 1024px) 
-{ 
+@media screen and (min-width: 1024px) {
   .modal-room {
-  max-width: 712px;
-  max-height: 638px;
-  padding-bottom: 0px;
-
-
+    max-width: 712px;
+    max-height: 638px;
+    padding-bottom: 0px;
   }
-  .title-modal-room{
+  .title-modal-room {
     font-size: 36px;
     line-height: 0.87;
     letter-spacing: 0.05em;
   }
 
-.modal-input-room{
-  max-width: 288px;
-  font-size: 24px;
-  line-height: 0,87;
-  letter-spacing: 0.05em;
-}
-.modal-select-room{
-  min-width: 288px;
-}
-.modal-button-room{
-  font-size:24px;
-  line-height: 0,82;
-  width: 592px;
-  height: 64px;
-  margin-top: 12px;
+  .modal-input-room {
+    max-width: 288px;
+    font-size: 24px;
+    line-height: 0, 87;
+    letter-spacing: 0.05em;
+  }
+  .modal-select-room {
+    min-width: 288px;
+  }
+  .modal-button-room {
+    font-size: 24px;
+    line-height: 0, 82;
+    width: 592px;
+    height: 64px;
+    margin-top: 12px;
+  }
+  .modal-position-room {
+    margin-bottom: 28px;
+  }
 
-}
-.modal-position-room{
-  margin-bottom: 28px;}
-
-.contact{
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 0px;
-}
-.lux{
-  margin-left: 349px;
-
-}
+  .contact {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 0px;
+  }
+  .lux {
+    margin-left: 349px;
+  }
 }
