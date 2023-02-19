@@ -1,6 +1,13 @@
 .room2 {
     background-color: #F0ECD6;
   }
+
+@media screen and (min-width: 1280px) {
+  .block--room2 {
+    margin-right: 57px;
+  }
+}
+
   @media screen and (min-width: 1024px) {
     .text_and_img--room2 {
       flex-direction: row-reverse;
@@ -31,7 +38,14 @@
   }
   @media screen and (min-width: 1024px) {
     .room2__image {
-      margin: -94px auto 48px 0;
+      margin-top: -94px;
+      margin-bottom: 48px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .room2__image {
+      margin-top: -104px;
+      margin-bottom: 49px;
     }
   }
 
@@ -44,12 +58,22 @@
   .slider-btn-position--room2 {
     margin-right: -15px;
   }
-  .swiper.room2-swiper {
-    width: 284px !important;
+  @media screen and (min-width: 1024px) {
+    .slider-btn-position--room2 {
+      margin-right: 0;
+    }
+  }
+  .slider-viewport--room2 {
     margin-right: 0;
+    margin-left: auto;
+  }
+ .room2-swiper {
+    width: 284px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 @media screen and (min-width: 1024px) {
-  .swiper.room2-swiper {
+  .room2-swiper {
     width: 428px !important;
     margin-right: 0;
   }
@@ -57,4 +81,10 @@
 
 .room2__slider-btns {
     margin-right: 15px !important;
+}
+@media screen and (min-width: 1024px) {
+  .room2__slider-btns {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
 }

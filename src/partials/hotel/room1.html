@@ -11,7 +11,7 @@
           veniam consequat sunt nostrud amet.
         </p>
       </div>
-      <div class="thumb room1-hero-img">
+      <div class="thumb">
         <picture>
           <source
             media="(max-width: 1023px)"
@@ -51,11 +51,11 @@
     <div class="slider_and_buttons">
       <div class="room__slider-position">
         <div class="slider-btn-position slider-btn-position--room1">
-          <div class="swiper mySwiper about-swiper room1-swiper">
-            <div class="swiper-wrapper">
+          <div class="swiper mySwiper about-swiper slider-viewport--room slider-viewport--room1">
+            <div class="swiper-wrapper room1-swiper">
               <div class="swiper-slide swiper-slide__img swiper-slide--rooms">
                 <div class="thumb room-img-width">
-                  <picture>
+                  <picture >
                     <source
                       media="(max-width: 1023px)"
                       srcset="
@@ -68,7 +68,7 @@
                     <source
                       media="(max-width: 1279px)"
                       srcset="
-                        ./img/hotel/slider/hotel__room1-slider-01----tablet.jpg  1x,
+                        ./img/hotel/slider/hotel__room1-slider-01--tablet.jpg  1x,
                         ./img/hotel/slider/hotel__room1-slider-01--tablet@2x.jpg 2x
                       "
                       type="image/jpeg"
@@ -105,7 +105,7 @@
                     <source
                       media="(max-width: 1279px)"
                       srcset="
-                        ./img/hotel/slider/hotel__room1-slider-02----tablet.jpg  1x,
+                        ./img/hotel/slider/hotel__room1-slider-02--tablet.jpg  1x,
                         ./img/hotel/slider/hotel__room1-slider-02--tablet@2x.jpg 2x
                       "
                       type="image/jpeg"
@@ -142,7 +142,7 @@
                     <source
                       media="(max-width: 1279px)"
                       srcset="
-                        ./img/hotel/slider/hotel__room-slider-03----tablet.jpg  1x,
+                        ./img/hotel/slider/hotel__room-slider-03--tablet.jpg  1x,
                         ./img/hotel/slider/hotel__room-slider-03--tablet@2x.jpg 2x
                       "
                       type="image/jpeg"
@@ -179,7 +179,7 @@
                     <source
                       media="(max-width: 1279px)"
                       srcset="
-                        ./img/hotel/slider/hotel__room-slider-04----tablet.jpg  1x,
+                        ./img/hotel/slider/hotel__room-slider-04--tablet.jpg  1x,
                         ./img/hotel/slider/hotel__room-slider-04--tablet@2x.jpg 2x
                       "
                       type="image/jpeg"
@@ -201,23 +201,6 @@
                   </picture>
                 </div>
               </div>
-              <!-- 
-                            <div class="swiper-slide swiper-slide__img swiper-slide--rooms">
-                                <div class="thumb room-img-width">
-                                    <img class="" src="./img/hotel/slider/hotel__room1-slider-01--mobile.jpg" srcset="
-                                    ./img/hotel/slider/hotel__room1-slider-01--mobile.jpg    1x,
-                                    ./img/hotel/slider/hotel__room1-slider-01--mobile@2x.jpg 2x
-                      " alt="hotel__room1-slider-01" />
-                                </div>
-                            </div>
-                            <div class="swiper-slide swiper-slide__img swiper-slide--rooms">
-                                <div class="thumb room-img-width">
-                                    <img class="" src="./img/hotel/slider/hotel__room1-slider-02--mobile.jpg" srcset="
-                                    ./img/hotel/slider/hotel__room1-slider-02--mobile.jpg    1x,
-                                    ./img/hotel/slider/hotel__room1-slider-02--mobile@2x.jpg 2x
-                      " alt="hotel__room1-slider-02" />
-                                </div>
-                            </div> -->
             </div>
             <div class="slider-btns room__slider-btns room1__slider-btns">
               <div class="button-prev btn">
@@ -245,9 +228,9 @@
         </div>
       </div>
       <ul class="room__buttons">
-        <li><button class="room__button" type="button">Детальніше</button></li>
+        <li><a class="room__button" href="./mimiho/room">Детальніше</a></li>
         <li>
-          <button class="room__button" type="button">Переглянути ціни</button>
+          <button class="room__button js-open-modal" data-modal="3" type="button">Переглянути ціни</button>
         </li>
       </ul>
     </div>
