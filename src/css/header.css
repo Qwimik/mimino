@@ -11,10 +11,11 @@ header {
 .topline {
   font-family: 'FilmP3Bold', sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 39px;
   letter-spacing: 0.3em;
   color: #ffffff;
+  margin-right: 35px;
 }
 nav {
   display: flex;
@@ -24,6 +25,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 5px;
 }
 .header-phone {
   fill: #f3c653;
@@ -49,7 +51,7 @@ nav {
 .header-link {
   font-family: 'Montserrat-Regular', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #f3c653;
@@ -83,7 +85,7 @@ nav {
 .header-list {
   display: flex;
   align-items: center;
-  gap: 12px;
+  
 }
 
 .header-text {
@@ -92,8 +94,18 @@ nav {
 }
 
 @media screen and (min-width: 414px) {
+  .topline{
+    font-size: 36px;
+    margin-right: 0;
+  }
   .header-menu {
     padding-top: 16px;
+  }
+  .header-link {
+    font-size: 16px;
+  }
+  .header-list {
+    gap: 12px;
   }
 }
 @media screen and (min-width: 1024px) {
