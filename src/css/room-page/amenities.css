@@ -21,6 +21,11 @@
   margin-bottom: 32px;
 }
 
+.amenities-item {
+  margin-bottom: 32px;
+}
+
+
 .amenities-text {
   font-family: 'Montserrat-Regular', sans-serif;
   font-style: normal;
@@ -29,7 +34,6 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #7a7a7a;
-  margin-bottom: 32px;
 }
 
 .amenities-list {
@@ -50,7 +54,6 @@
   font-style: normal;
   font-weight: 500;
   color: #ffffff;
-  margin-bottom: 20px;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -113,11 +116,13 @@
     width: 100%;
     height: 64px;
     text-align: center;
+     margin-bottom: 20px;
   }
   .amenities-section {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+ 
   .amenities-btn {
     font-size: 20px;
     line-height: 1.2;
@@ -137,17 +142,19 @@
   .amenities-btn {
     width: 434px;
     height: 65px;
+     margin-bottom: 32px;
   }
 
   .animaties-sect {
     display: flex;
   }
-  .amenities-item {
-    margin-top: 30px;
-  }
+
   .badroom {
     margin-right: 400px;
   }
+  .amenities-item:last-child {
+  margin-bottom: 40px;
+}
   .amenities-text {
     max-width: 400px;
   }
