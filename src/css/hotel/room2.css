@@ -37,9 +37,7 @@
     margin: 0 auto 34px 0;
   }
   @media screen and (min-width: 1024px) {
-    .room2__image {/* 
-      margin: -94px auto 48px 0;
-       */
+    .room2__image {
       margin-top: -94px;
       margin-bottom: 48px;
     }
