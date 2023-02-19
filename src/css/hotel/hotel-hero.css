@@ -1,0 +1,77 @@
+/*============== HOTEL HERO MOBILE ======= */
+.hotel-hero {
+  min-width: 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  background-color: #fffdee;
+}
+
+.hotel-hero-btn {
+  margin-top: 178px;
+}
+
+@media screen and (max-width: 1023px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('/img/hotel/hotel__bg-hero--mobile.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('/img/hotel/hotel__bg-hero--mobile@2x.jpg');
+  }
+}
+
+/*============== // HOTEL HERO MOBIL ======= */
+
+/*============== HOTEL HERO TABLET ======= */
+
+@media screen and (min-width: 1024px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('/img/hotel/hotel__bg-hero--tablet.jpg');
+  }
+
+  .hotel-hero-btn {
+    margin-top: 226px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+  screen and (min-resolution: 192dpi) and (min-width: 1024px),
+  screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('/img/hotel/hotel__bg-hero--tablet@2x.jpg');
+  }
+}
+
+/*============== // HOTEL HERO TABLET ======== */
+
+/*============== HOTEL HERO DESKTOP ======= */
+@media screen and (min-width: 1280px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('/img/hotel/hotel__bg-hero--desktop.jpg');
+  }
+
+  .hotel-hero-btn {
+    margin-top: 249px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hotel-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('/img/hotel/hotel__bg-hero--desktop@2x.jpg');
+  }
+}
+/*============== // HOTEL HERO DESKTOP ======== */

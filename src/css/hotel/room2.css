@@ -1,0 +1,106 @@
+.room2 {
+    background-color: #F0ECD6;
+  }
+
+@media screen and (min-width: 1280px) {
+  .block--room2 {
+    margin-right: 57px;
+  }
+}
+
+  @media screen and (min-width: 1024px) {
+    .text_and_img--room2 {
+      flex-direction: row-reverse;
+      gap: 45px;
+    }
+  }
+
+  .text__over-title--room2 {
+    text-align: right;
+  }
+  .text__logo--room2 {
+    text-align: right;
+  }
+  .text__title--room2 {
+    text-align: right;
+  }
+  .text__paragraph--room2 {
+    padding: 0 59px 32px 83px;
+  }
+  @media screen and (min-width: 1024px) {
+    .text__paragraph--room2 {
+      padding: 0;
+    }
+  }
+
+  .room2__image {
+    margin: 0 auto 34px 0;
+  }
+  @media screen and (min-width: 1024px) {
+    .room2__image {
+      margin-top: -94px;
+      margin-bottom: 48px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .room2__image {
+      margin-top: -104px;
+      margin-bottom: 49px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .slider_and_buttons--room2 {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .slider-btn-position--room2 {
+    margin-right: -15px;
+  }
+  @media screen and (min-width: 1024px) {
+    .slider-btn-position--room2 {
+      margin-right: 0;
+    }
+  }
+  .slider-viewport--room2 {
+    margin-right: 0;
+    margin-left: auto;
+  }
+ .room2-swiper {
+    width: 284px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+@media screen and (min-width: 1024px) {
+  .room2-swiper {
+    width: 428px !important;
+    margin-right: 0;
+  }
+}
+
+.room2__slider-btns-first {
+  margin-left: auto !important;
+}
+@media screen and (min-width: 1024px) {
+  .room2__slider-btns-first {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .room2__slider-btns-second {
+    margin-right: auto !important;
+  }
+}
+
+.room2__slider-btns {
+  display: flex;
+  margin-right: 15px !important;
+}
+/* @media screen and (min-width: 1024px) {
+  .room2__slider-btns {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+  }
+} */
