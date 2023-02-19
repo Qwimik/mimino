@@ -1,0 +1,689 @@
+.links {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+/* ============== phone ==================== */
+
+@media (max-width:1023px) {
+
+        .room-hero {
+            position: relative;
+            min-Width: 325px;
+            height: 718px;
+            background-image: url(../../img/room-page/room1__bg-hero-01--desktop.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .room-button {
+            left: 16px;
+            bottom: 350px;
+            position: absolute;
+            border: none;
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        .room-button1 {
+            right: 16px;
+            bottom: 350px;
+            position: absolute;
+            border: none;
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        .room-title {
+            bottom: 122px;
+            position: absolute;
+            gap: 14px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .room-hero-toptitle {
+            font-family: 'Times New Roman';
+                font-style: normal;
+                width: 325px;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: calc(32 / 28);
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+        }
+
+        .room-hero-title {
+            font-family: 'Montserrat';
+                font-style: normal;
+                width: 325px;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: calc(15 / 12);
+                letter-spacing: 0.02em;
+                color: #FFFFFF;
+        }
+
+        .room-hero-button {
+            padding: 14px 35px;
+            position: absolute;
+            bottom: 40px;
+            margin-left: 164px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            color: #F3C653;
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid #FFFFFF;
+            border-radius: 25px;
+        }
+
+        .room-hero-adres {
+            fill: #F3C653;
+            width: 100%;
+            height: 100%;
+        }
+
+        .-room-adress {
+            color: #E5E5E5;
+        }
+
+        .room-soc-address {position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+        
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+           
+        }
+
+        .room-img-button {
+            fill: #F3C653;
+        }
+
+        .soc-container {
+            position: absolute;
+            bottom: 16px;
+            
+        }
+
+        .room-hero-soc {
+           
+            fill: #F3C653;
+        }
+
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.room-hero-modal {
+    position: relative;
+    width: 414px;
+    height: 572px;
+    background: #FFFDEE;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+.close-button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    stroke: #000000;
+    border: none;
+    top: 18px;
+    right: 18px;
+    position: absolute;
+}
+
+.room-modal-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    color: #000000;
+    justify-content: center;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.modal-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.05em;
+    color: #808080;
+    margin-left: 15px;
+    margin-bottom: 28px;
+}
+
+.modal-input-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #C79002;
+    margin-left: 15px;
+}
+
+.modal-input-hero {
+    width: 384px;
+    height: 64px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: 1px solid #C79002;
+    margin-left: 15px;
+}
+
+.modal-input1 {
+    margin-top: 14px;
+    margin-bottom: 48px;
+    
+}
+
+.room-hero-label-title {
+    font-family: 'Montserrat';
+    position: absolute;
+    bottom: 126px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #C79002;
+}
+
+.room-hero-label-title1{bottom: 238px;}
+
+.title-room-hero {
+    margin-left: 30px;
+}
+
+.modal-send-btn {
+    padding: 20px 57px;
+    font-family: 'Montserrat';
+    background-color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 58px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+
+/* ============== tablet ==================== */
+
+@media (min-width:1024px) and (max-width:1279px) {
+
+
+    .room-hero {
+        position: relative;
+        min-Width: 1024px;
+        height: 718px;
+        background-image: url(../../img/room-page/room1__bg-hero-01--desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .room-button {
+        left: 47px;
+        bottom: 338px;
+        position: absolute;
+        border: none;
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    .room-button1 {
+        right: 47px;
+        bottom: 338px;
+        position: absolute;
+        border: none;
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    .room-title {
+        bottom: 102px;
+        
+        position: absolute;
+    }
+
+    .room-hero-toptitle {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(41 / 26);
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    }
+
+    .room-hero-title {
+        width: 400px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+
+    .room-hero-button {
+        padding: 14px 35px;
+        position: absolute;
+        bottom: 66px;
+        margin-left: 700px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #F3C653;
+        background: rgba(0, 0, 0, 0.4);
+        border: 2px solid #FFFFFF;
+        border-radius: 25px;
+    }
+
+    .room-hero-adres{fill: #F3C653;
+        width: 100%;
+        height: 100%;}
+
+    .-room-adress{color: #E5E5E5;}
+
+    .room-soc-address {
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        
+        width: 244px;
+        gap:16px;
+        padding: 8px;
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+
+    .room-img-button {
+        fill: #F3C653;
+    }
+
+.soc-container{position: absolute;
+    bottom: 46px;
+    margin-left: 279px;
+    display: flex;}
+
+    .room-hero-soc{display: flex;
+    gap: 24px;
+    fill: #F3C653;}
+
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.room-hero-modal {
+    position: relative;
+    width: 712px;
+    height: 489px;
+    background: #FFFDEE;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.close-button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    stroke: #000000;
+    border: none;
+    top: 18px;
+    right: 18px;
+    position: absolute;
+}
+
+.room-modal-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    color: #000000;
+    justify-content: center;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.modal-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.05em;
+    color: #808080;
+    margin-left: 60px;
+    margin-bottom: 28px;
+}
+
+.modal-input-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #C79002;
+    margin-left: 60px;
+}
+
+.modal-input-hero {
+    width: 288px;
+    height: 64px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: 1px solid #C79002;
+}
+
+.modal-input1 {
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-right: 18px;
+}
+
+.room-hero-label-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #C79002;
+}
+
+.title-room-hero {
+    display: flex;
+    gap: 197px;
+    margin-left: 72px;
+}
+
+.modal-send-btn {
+    padding: 18px 168px;
+    font-family: 'Montserrat';
+    background-color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 58px;
+    margin-bottom: 78px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+}
+
+/* ============== desktop ==================== */
+
+@media (min-width:1280px) {
+    
+
+
+    .visually-hidden1 {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+    
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+
+    .room-hero {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1280px;
+        height: 720px;
+        background-image: url(../../img/room-page/room1__bg-hero-01--desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .room-button {
+        left: 85px;
+        bottom: 286px;
+        position: absolute;
+        border: none;
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    .room-button1 {
+        right: 85px;
+        bottom: 286px;
+        position: absolute;
+        border: none;
+        background: rgba(0, 0, 0, 0.65);
+    }
+
+    .room-title {
+        bottom: 48px;
+        left: 85px;
+        position: absolute;
+    }
+
+    .room-hero-toptitle {
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(41 / 36);
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    }
+
+    .room-hero-title {
+        width: 400px;
+        color: #Ffffff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.02em;
+    }
+
+    .room-hero-button {
+        padding: 14px 35px;
+        position: absolute;
+        bottom: 66px;
+        right: 85px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #F3C653;
+        background: rgba(0, 0, 0, 0.4);
+        border: 2px solid #FFFFFF;
+        border-radius: 25px;
+    }
+
+    .room-img-button {
+        fill: #F3C653;
+    }
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.room-hero-modal{
+    position: relative;
+    width: 712px;
+    height: 489px;
+    background: #FFFDEE;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    
+}
+
+.close-button{width: 24px;
+    height: 24px;
+    background-color: transparent;
+    stroke: #000000;
+    border: none;
+    top: 18px;
+    right: 18px;
+    position: absolute;}
+
+.room-modal-title{font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    color: #000000;
+    justify-content: center;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;}
+
+.modal-title{font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc( 28 / 24);
+    letter-spacing: 0.05em;
+    color: #808080;
+    margin-left: 60px;
+    margin-bottom: 28px;}
+
+.modal-input-title{font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #C79002;
+    margin-left: 60px;}
+
+.modal-input-hero{width:288px; height: 64px;
+    margin-bottom:8px;
+    background-color: transparent;
+    border: 1px solid #C79002;}
+
+.modal-input1{margin-left: 60px;
+    margin-top: 20px;
+    margin-right: 18px;}
+
+.room-hero-label-title{font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #C79002;}
+
+.title-room-hero{display: flex;
+    gap: 197px;
+    margin-left: 72px;}
+
+.modal-send-btn{padding: 18px 168px;
+    font-family: 'Montserrat';
+    background-color: #000000;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: calc(29 / 24);
+        text-align: center;
+        color: #FFFFFF;
+    margin-top: 58px;
+    margin-bottom: 78px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;}
+
+
+}
