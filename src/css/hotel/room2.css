@@ -20,6 +20,7 @@
   }
   .text__logo--room2 {
     text-align: right;
+    margin-right: -20px;
   }
   .text__title--room2 {
     text-align: right;
