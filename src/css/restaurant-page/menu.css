@@ -85,9 +85,11 @@
     align-items: center;
 }
 
-.menu-type:not(:last-child){
+.menu-type{
     margin-bottom: 8px;
 }
+
+
 
 .menu-button {
     display: block;
@@ -110,6 +112,14 @@
     cursor: pointer;
 
 }
+
+.menu-button:hover,
+.menu-button:focus{
+    background-color: #FFFFFF;
+    color: #F3C653;
+}
+
+
 
     
     
@@ -146,9 +156,13 @@
 
        
         .menu-type {
-            
+          margin-bottom: 0;
              max-width: 411px;
         }
+
+        .menu-type:not(:last-child){
+              margin-bottom: 8px;
+          }   
     
     
         .menu-info {
@@ -161,6 +175,8 @@
             margin-left: auto;
 
         }
+
+
      }
 
         
