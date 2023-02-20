@@ -401,9 +401,8 @@
       <!-- * <<<=============== Modal window Book Table ===================>>>* -->
 
 <div class="modal" data-modal="2">
-
   <div class="modal-content">
-    <button class="modal-close-btn js-modal-close" type="button" >
+    <button class="modal-close-btn js-modal-close" type="button">
       <svg class="icon-x" width="18" height="18">
         <use href="/mimino/assets/icons-cad88784.svg#icon-close"></use>
       </svg>
@@ -412,16 +411,19 @@
     <form class="modal-form">
       <div class="fixed">
         <div class="modal-position-icon">
-        <input
-          class="modal-input"
-          id="user-name"
-          type="text"
-          name="name"
-          placeholder="Ваше ім’я"
-          pattern="[A-Za-zА-Яа-яЁё]{2,20}"
-          required/>
-        <label for="user-name" class="form-lable"><span class="label-title">На кого забронювати столик?</span></label
-        > </div>
+          <input
+            class="modal-input"
+            id="user-name"
+            type="text"
+            name="name"
+            placeholder="Ваше ім’я"
+            pattern="[A-Za-zА-Яа-яЁё]{2,20}"
+            required
+          />
+          <label for="user-name" class="form-lable"
+            ><span class="label-title">На кого забронювати столик?</span></label
+          >
+        </div>
         <div class="modal-position-icon">
           <input
             class="modal-input"
@@ -430,45 +432,60 @@
             name="tel"
             placeholder="+38 (___) ___-__-__"
             pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-            required/>
-          <label for="user-number" class="form-lable"><span class="label-title">Номер телефону</span></label
-          > </div></div>
-        <div class="fixed">
-          <div class="modal-position-icon">
-            <div class="select-icon-position">
-          <select class="modal-input modal-select select" id="number" name="number">
-            <option value="2" selected>2</option>
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-          </select>
-            </div>
-          <label for="size" class="form-lable"><span class="label-title"
+            required
+          />
+          <label for="user-tel" class="form-lable"
+            ><span class="label-title">Номер телефону</span></label
+          >
+        </div>
+      </div>
+      <div class="fixed">
+        <div class="modal-position-icon">
+          <div class="select-icon-position">
+            <select
+              class="modal-input modal-select select"
+              id="number"
+              name="number"
+            >
+              <option value="2" selected>2</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+            </select>
+          </div>
+          <label for="number" class="form-lable"
+            ><span class="label-title"
               >Столик на яку кількість осіб?</span
             ></label
-          > </div>
+          >
+        </div>
         <div class="modal-position-icon select-position">
           <div class="select-icon-position">
-          <select class="modal-input modal-select select" name="day" id="day">
-            <optgroup label="Сьогодні">
-              <option class="option" value="Сьогодні" selected>Сьогодні</option>
-              <option class="option" value="Завтра">Завтра</option>
-              <option class="option" value="На конкретну дату">Обрати іншу дату</option>
-            </optgroup>
-          </select></div>
-          <label for="user-data" class="form-lable"><span class="label-title">На яку дату бронювати?</span></label
-          > </div></div>
+            <select class="modal-input modal-select select" name="day" id="day">
+              <optgroup label="Сьогодні">
+                <option class="option" value="Сьогодні" selected>
+                  Сьогодні
+                </option>
+                <option class="option" value="Завтра">Завтра</option>
+                <option class="option" value="На конкретну дату">
+                  Обрати іншу дату
+                </option>
+              </optgroup>
+            </select>
+          </div>
+          <label for="day" class="form-lable"
+            ><span class="label-title">На яку дату бронювати?</span></label
+          >
+        </div>
+      </div>
       <button type="submit" class="modal-form-button js-modal-close">
         ОФОРМИТИ БРОНЮВАННЯ
       </button>
     </form>
   </div>
-
 </div>
 
-
 <!-- * <<<=============== Modal window Book Room ===================>>>* -->
-
 
 <div class="modal modal-room" data-modal="1">
   <div class="modal-content">
@@ -481,60 +498,111 @@
     <form class="modal-form-room">
       <div class="fixed-room-room">
         <div class="contact">
-        <div class="modal-position-room">
-          <input class="modal-input-room" id="user-name" type="text" name="name" placeholder="Ваше ім’я"
-            pattern="[A-Za-zА-Яа-яЁё]{2,20}" required />
-          <label for="user-name" class="form-lable-room"><span class="label-title-room">На кого забронювати номер?</span></label>
-        </div>
-        <div class="modal-position-room">
-          <input class="modal-input-room" id="user-tel" type="tel" name="tel" placeholder="+38 (___) ___-__-__"
-            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required />
-          <label for="user-number" class="form-lable-room"><span class="label-title-room">Номер телефону</span></label>
+          <div class="modal-position-room">
+            <input
+              class="modal-input-room"
+              id="user-name-room"
+              type="text"
+              name="name"
+              placeholder="Ваше ім’я"
+              pattern="[A-Za-zА-Яа-яЁё]{2,20}"
+              required
+            />
+            <label for="user-name-room" class="form-lable-room"
+              ><span class="label-title-room"
+                >На кого забронювати номер?</span
+              ></label
+            >
+          </div>
+          <div class="modal-position-room">
+            <input
+              class="modal-input-room"
+              id="user-tel-room"
+              type="tel"
+              name="tel"
+              placeholder="+38 (___) ___-__-__"
+              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              required
+            />
+            <label for="user-tel-room" class="form-lable-room"
+              ><span class="label-title-room">Номер телефону</span></label
+            >
+          </div>
         </div>
       </div>
-    </div>
       <div class="fixed-room">
         <div class="modal-position-room select-position-room lux">
           <div class="select-icon-position">
-          <select class="modal-input-room modal-select-room select" id="number" name="number">
-            <option value="Двомісний люкс" selected>Двомісний люкс</option>
-            <option value="Двомісний номер">Двомісний</option>
-            <option value="Трьохмісний номер">Трьохмісний</option>
-          </select></div>
-          <label for="size" class="form-lable-room"><span class="label-title-room">Категорія номеру</span></label>
-        </div>
-          <div class="fixed-room">
-        <div class="contact"><div class="modal-position-room select-position-room">
-          <div class="select-icon-position">
-          <select class="modal-input-room modal-select-room select" name="day" id="day">
-            <optgroup label="Сьогодні">
-              <option class="option" value="Сьогодні" selected>Сьогодні</option>
-              <option class="option" value="Завтра">Завтра</option>
-              <option class="option" value="На конкретну дату">Обрати іншу дату</option>
-            </optgroup>
-          </select></div>
-          <label for="user-data" class="form-lable-room"><span class="label-title-room">Дата заїзду</span></label>
-        </div>
-        <div class="modal-position-room select-position-room">
-        <div class="select-icon-position">
-          <select class="modal-input-room modal-select-room select" name="day" id="day">
-            <optgroup label="Сьогодні">
-              <option class="option" value="Сьогодні" selected>Сьогодні</option>
-              <option class="option" value="Завтра">Завтра</option>
-              <option class="option" value="На конкретну дату">Обрати іншу дату</option>
-            </optgroup>
-          </select></div>
-          <label for="user-data" class="form-lable-room"><span class="label-title-room">Дата виїзду</span></label>
+            <select
+              class="modal-input-room modal-select-room select"
+              id="number-room"
+              name="number"
+            >
+              <option value="Двомісний люкс" selected>Двомісний люкс</option>
+              <option value="Двомісний номер">Двомісний</option>
+              <option value="Трьохмісний номер">Трьохмісний</option>
+            </select>
+          </div>
+          <label for="number-room" class="form-lable-room"
+            ><span class="label-title-room">Категорія номеру</span></label
+          >
         </div>
       </div>
-    </div>
+      <div class="fixed-room">
+        <div class="contact">
+          <div class="modal-position-room select-position-room">
+            <div class="select-icon-position">
+              <select
+                class="modal-input-room modal-select-room select"
+                name="day-1"
+                id="day-1"
+              >
+                <optgroup label="Сьогодні">
+                  <option class="option" value="Сьогодні" selected>
+                    Сьогодні
+                  </option>
+                  <option class="option" value="Завтра">Завтра</option>
+                  <option class="option" value="На конкретну дату">
+                    Обрати іншу дату
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <label for="day-1" class="form-lable-room"
+              ><span class="label-title-room">Дата заїзду</span></label
+            >
+          </div>
+          <div class="modal-position-room select-position-room">
+            <div class="select-icon-position">
+              <select
+                class="modal-input-room modal-select-room select"
+                name="day-2"
+                id="day-2"
+              >
+                <optgroup label="Сьогодні">
+                  <option class="option" value="Сьогодні" selected>
+                    Сьогодні
+                  </option>
+                  <option class="option" value="Завтра">Завтра</option>
+                  <option class="option" value="На конкретну дату">
+                    Обрати іншу дату
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+            <label for="day-2" class="form-lable-room"
+              ><span class="label-title-room">Дата виїзду</span></label
+            >
+          </div>
+        </div>
+      </div>
       <button type="submit" class="modal-button-room js-modal-close">
         ОФОРМИТИ БРОНЮВАННЯ
       </button>
     </form>
   </div>
-
 </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
