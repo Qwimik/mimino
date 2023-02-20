@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
             подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      document.body.classList.add('modal-opened');
     }); // end click
   }); // end foreach
 
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      document.body.classList.remove('modal-opened');
     });
   }); // end foreach
 
@@ -72,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.overlay').classList.remove('active');
+        document.body.classList.remove('modal-opened');
       }
     },
     false
@@ -81,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.target === e.currentTarget) {
       document.querySelector('.modal.active').classList.remove('active');
       this.classList.remove('active');
+      document.body.classList.remove('modal-opened');
     }
   });
 }); // end ready
