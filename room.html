@@ -17,8 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/mimino/assets/modal-ef96c4f2.js"></script>
-    <link rel="stylesheet" href="/mimino/assets/modal-9ace1073.css">
+    <script type="module" crossorigin src="/mimino/assets/modal-88aa2895.js"></script>
+    <link rel="stylesheet" href="/mimino/assets/modal-4f22a3e6.css">
   </head>
   <body>
     <!--Назар Крюк-->
@@ -96,7 +96,6 @@
   <!-- room-hero -->
 
   <div class="container hero-room-container">
-
     <div>
       <button class="room-button">
         <svg width="40" height="40" class="room-img-button">
@@ -111,39 +110,38 @@
     </div>
 
     <div class="room-title">
-
-      <h1 class="room-hero-toptitle">
-        ДВОМІСНИЙ НОМЕР люкс
-      </h1>
+      <h1 class="room-hero-toptitle">ДВОМІСНИЙ НОМЕР люкс</h1>
 
       <p class="room-hero-title">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-        velit
-        mollit. Exercitation veniam consequat sunt nostrud amet.
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
       </p>
-
     </div>
 
     <div>
-      <button type="button" class="room-hero-button js-open-modal" data-modal="3">
+      <button
+        type="button"
+        class="room-hero-button js-open-modal"
+        data-modal="3"
+      >
         Переглянути ціни
       </button>
     </div>
 
     <div class="visually-hidden1">
-
-      <div class="room-soc-address ">
+      <div class="room-soc-address">
         <div>
           <svg class="room-hero-adres" width="12px" height="20px">
-            <use href="/mimino/assets/icons-cad88784.svg#icon-location-pin">
-            </use>
+            <use href="/mimino/assets/icons-cad88784.svg#icon-location-pin"></use>
           </svg>
         </div>
-        <address class="links -room-adress"><a href="https://goo.gl/maps/VDoQrk8Fayzj6FLU9">Україна, м. Полтава, <br>
-            вул. Маршала Бірюзова, 15</a>
-
+        <address class="links -room-adress">
+          <a href="https://goo.gl/maps/VDoQrk8Fayzj6FLU9"
+            >Україна, м. Полтава, <br />
+            вул. Маршала Бірюзова, 15</a
+          >
         </address>
-
       </div>
 
       <ul class="links soc-container">
@@ -169,19 +167,16 @@
           </a>
         </li>
       </ul>
-
     </div>
-
   </div>
-
 </section>
 
 <!-- ====================== Room Price Modal window ======================== -->
 
-<div class="modal" data-modal="3">
+<div class="modal modal-container" data-modal="3">
   <div class="room-modal">
     <div class="room-hero-modal">
-      <button class='modal-close-button js-modal-close' type="button">
+      <button class="modal-close-button js-modal-close" type="button">
         <svg class="close-button">
           <use href="/mimino/assets/icons-cad88784.svg#icon-close"></use>
         </svg>
@@ -190,29 +185,39 @@
       <p class="modal-title">Двомісний люкс</p>
 
       <form class="modalform">
-
-        <label><span class="modal-input-title">Категорія номеру</span><br>
+        <label for="select"
+          ><span class="modal-input-title">Категорія номеру</span><br />
           <span class="modal-logo-use">
-            <select class="modal-input-hero modal-input1" name="1" id="select">
-              <option value="1">1</option>
-              <option value="3">3</option>
-              <option value="7">7</option>
-              <option value="14">14</option>
-            </select>
+            <span class="modal-arrow-position">
+              <select
+                class="modal-input-hero modal-input1"
+                name="1"
+                id="select"
+              >
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="7">7</option>
+                <option value="14">14</option>
+              </select>
+            </span>
           </span>
-
         </label>
 
-        <label>
+        <label for="room-input-text">
           <span class="modal-logo-use">
-            <input class="modal-input-hero" required>
-
+            <input
+              class="modal-input-hero"
+              id="room-input-text"
+              required
+              placeholder="1000"
+            />
           </span>
-
         </label>
         <ul class="title-room-hero">
           <li>
-            <p class="room-hero-label-title room-hero-label-title1">Кількість ночей</p>
+            <p class="room-hero-label-title room-hero-label-title1">
+              Кількість ночей
+            </p>
           </li>
           <li>
             <p class="room-hero-label-title">грн</p>
@@ -224,6 +229,7 @@
     </div>
   </div>
 </div>
+
     <!--Yevheniia-->
     <section class="amenities page-section">
   <!-- amenities -->
