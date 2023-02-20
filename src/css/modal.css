@@ -163,20 +163,17 @@ body.modal-open {
   margin-bottom: 45px;
   letter-spacing: 0.02px;
   cursor: pointer;
-
 }
-.modal-form-button:hover{
+.modal-form-button:hover {
   background-color: #f3c653;
   border: 2px solid #ffffff;
   transition-duration: 250ms;
-  
 }
 .modal-position-icon {
   margin-bottom: 20px;
 }
 .select-position {
   margin-bottom: 40px;
-
 }
 
 /* =============== media screen ===================*/
@@ -204,7 +201,6 @@ body.modal-open {
     height: 64px;
     margin-top: 0px;
     margin-bottom: 60px;
-   
   }
   .modal-form {
     display: flex;
@@ -253,8 +249,7 @@ body.modal-open {
   max-width: 414px;
   max-height: 780px;
   overflow: scroll;
-  
-  
+
   padding: 15px;
   background-color: #fffdee;
   border-radius: 2px;
@@ -327,7 +322,6 @@ body.modal-open {
   margin-bottom: 8px;
 }
 
-
 .label-title-room {
   color: #c79002;
   margin-left: 27px;
@@ -340,9 +334,9 @@ body.modal-open {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  min-width: 384px;
+  min-width: 300px;
   height: 64px;
-  padding: 20px 43px;
+  padding: 20px 10px;
 
   font-size: 20px;
 
@@ -354,11 +348,10 @@ body.modal-open {
   margin-top: 40px;
   margin-bottom: 60px;
 }
-.modal-button-room:hover{
+.modal-button-room:hover {
   background-color: #f3c653;
   border: 2px solid #ffffff;
   transition-duration: 250ms;
-  
 }
 /* =============== media screen ===================*/
 @media screen and (min-width: 1024px) {
@@ -366,7 +359,7 @@ body.modal-open {
     max-width: 712px;
     max-height: 638px;
     padding-bottom: 0px;
-    overflow:hidden;
+    overflow: hidden;
   }
   .title-modal-room {
     font-size: 36px;
