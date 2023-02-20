@@ -77,8 +77,12 @@
     line-height: 1.21;
     color: #000000;
     letter-spacing: 0.02em;
+    width: 120px;
+   
     
 }
+
+  
 
 .menu-info {
     display: flex;
@@ -126,8 +130,7 @@
 
 
 
-    
-    
+  
 
     @media screen and (min-width:1024px) {
    
@@ -187,7 +190,11 @@
            
 
         }
+        .deserts{
+            width: 250px;
+        }
 
+       
 
      }
 
@@ -224,6 +231,7 @@
             
     }
 
+    
      
 
     
