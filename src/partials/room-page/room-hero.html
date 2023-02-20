@@ -3,122 +3,130 @@
 
   <div class="container hero-room-container">
 
-<div>
-  <button class="room-button">
-    <svg width="40" height="40" class="room-img-button">
-      <use href="./img/icons.svg#icon-Vector-left"></use>
-    </svg>
-  </button>
-  <button class="room-button1">
-    <svg width="40" height="40" class="room-img-button">
-      <use href="./img/icons.svg#icon-Vector-right"></use>
-    </svg>
-  </button>
-</div>
-
-<div class="room-title">
-
-  <h1 class="room-hero-toptitle">
-    ДВОМІСНИЙ НОМЕР люкс
-  </h1>
-
-  <p class="room-hero-title">
-    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
-    mollit. Exercitation veniam consequat sunt nostrud amet.
-  </p>
-
-</div>
-
-<div>
-  <button type="button" class="room-hero-button" data-room-price-modal-open>
-    Переглянути ціни
-  </button>
-</div>
-
-<div class="visually-hidden1">
-
-<div class="room-soc-address ">
-  <div>
-    <svg class="room-hero-adres" width="12px" height="20px">
-      <use href="./img/icons.svg#icon-location-pin">
-      </use>
-    </svg>
+    <div>
+      <button class="room-button">
+        <svg width="40" height="40" class="room-img-button">
+          <use href="./img/icons.svg#icon-Vector-left"></use>
+        </svg>
+      </button>
+      <button class="room-button1">
+        <svg width="40" height="40" class="room-img-button">
+          <use href="./img/icons.svg#icon-Vector-right"></use>
+        </svg>
+      </button>
     </div>
-    <address class="links -room-adress"><a href="https://goo.gl/maps/VDoQrk8Fayzj6FLU9">Україна, м. Полтава, <br> вул. Маршала Бірюзова, 15</a>
-    
-    </address>
+
+    <div class="room-title">
+
+      <h1 class="room-hero-toptitle">
+        ДВОМІСНИЙ НОМЕР люкс
+      </h1>
+
+      <p class="room-hero-title">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+        velit
+        mollit. Exercitation veniam consequat sunt nostrud amet.
+      </p>
+
+    </div>
+
+    <div>
+      <button type="button" class="room-hero-button js-open-modal" data-modal="3">
+        Переглянути ціни
+      </button>
+    </div>
+
+    <div class="visually-hidden1">
+
+      <div class="room-soc-address ">
+        <div>
+          <svg class="room-hero-adres" width="12px" height="20px">
+            <use href="./img/icons.svg#icon-location-pin">
+            </use>
+          </svg>
+        </div>
+        <address class="links -room-adress"><a href="https://goo.gl/maps/VDoQrk8Fayzj6FLU9">Україна, м. Полтава, <br>
+            вул. Маршала Бірюзова, 15</a>
+
+        </address>
+
+      </div>
+
+      <ul class="links soc-container">
+        <li>
+          <a class="links" href="">
+            <svg class="room-img-button" width="40" height="22">
+              <use href="./img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="links" href="">
+            <svg class="room-img-button" width="40" height="22">
+              <use href="./img/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="links" href="">
+            <svg class="room-img-button" width="40" height="22">
+              <use href="./img/icons.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div>
 
   </div>
-
-<ul class="links soc-container">
-  <li>
-    <a class="links" href="">
-    <svg class="room-img-button" width="40" height="22">
-      <use href="./img/icons.svg#icon-instagram"></use>
-    </svg>
-    </a>
-  </li>
-  <li>
-    <a class="links" href="">
-    <svg class="room-img-button" width="40" height="22">
-      <use href="./img/icons.svg#icon-facebook"></use>
-    </svg>
-    </a>
-  </li>
-  <li>
-    <a class="links" href="">
-    <svg class="room-img-button" width="40" height="22">
-      <use href="./img/icons.svg#icon-telegram"></use>
-    </svg>
-    </a>
-  </li>
-</ul>
-
-</div>
-
-</div>
 
 </section>
 
 <!-- ====================== Room Price Modal window ======================== -->
 
-<div class="backdrop is-hidden " data-room-price-modal>
-      <div class="room-hero-modal">
-        <button class='modal-close-button' type="button" data-room-price-modal-close>
-          <svg class="close-button">
-            <use href="./img/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="room-modal-title">ЦІНИ НА НОМЕР</p>
-        <p class="modal-title">Двомісний люкс</p>
-    
-        <form class="modalform">
-    
-          <label><span class="modal-input-title">Категорія номеру</span><br>
-            <span class="modal-logo-use">
-              <select class="modal-input-hero modal-input1" name="1" id="select">
+<div class="modal" data-modal="3">
+  <div class="room-modal">
+    <div class="room-hero-modal">
+      <button class='modal-close-button js-modal-close' type="button">
+        <svg class="close-button">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="room-modal-title">ЦІНИ НА НОМЕР</p>
+      <p class="modal-title">Двомісний люкс</p>
+
+      <form class="modalform">
+
+        <label><span class="modal-input-title">Категорія номеру</span><br>
+          <span class="modal-logo-use">
+            <select class="modal-input-hero modal-input1" name="1" id="select">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="7">7</option>
               <option value="14">14</option>
-              </select>
-            </span>
-            
-          </label>
-    
-          <label>
-            <span class="modal-logo-use">
-              <input class="modal-input-hero" required>
-              
-            </span>
-            
-          </label>
-          <ul class="title-room-hero">
-            <li><p class="room-hero-label-title room-hero-label-title1">Кількість ночей</p></li>
-            <li><p class="room-hero-label-title">грн</p></li>
-          </ul>
-        
-          <button class="modal-send-btn" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
-        </form>
-      </div>
+            </select>
+          </span>
+
+        </label>
+
+        <label>
+          <span class="modal-logo-use">
+            <input class="modal-input-hero" required>
+
+          </span>
+
+        </label>
+        <ul class="title-room-hero">
+          <li>
+            <p class="room-hero-label-title room-hero-label-title1">Кількість ночей</p>
+          </li>
+          <li>
+            <p class="room-hero-label-title">грн</p>
+          </li>
+        </ul>
+
+        <button class="modal-send-btn" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+      </form>
     </div>
+  </div>
+</div>
