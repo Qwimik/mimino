@@ -202,3 +202,62 @@
     </form>
   </div>
 </div>
+
+<!-- ====================== Room Price Modal window ======================== -->
+
+<div class="modal modal-container" data-modal="3">
+  <div class="room-modal">
+    <div class="room-hero-modal">
+      <button class="modal-close-button js-modal-close" type="button">
+        <svg class="close-button">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="room-modal-title">ЦІНИ НА НОМЕР</p>
+      <p class="modal-title">Двомісний люкс</p>
+
+      <form class="modalform">
+        <label for="select"
+          ><span class="modal-input-title">Категорія номеру</span><br />
+          <span class="modal-logo-use">
+            <span class="modal-arrow-position">
+              <select
+                class="modal-input-hero modal-input1"
+                name="1"
+                id="select"
+              >
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="7">7</option>
+                <option value="14">14</option>
+              </select>
+            </span>
+          </span>
+        </label>
+
+        <label for="room-input-text">
+          <span class="modal-logo-use">
+            <input
+              class="modal-input-hero"
+              id="room-input-text"
+              required
+              placeholder="1000"
+            />
+          </span>
+        </label>
+        <ul class="title-room-hero">
+          <li>
+            <p class="room-hero-label-title room-hero-label-title1">
+              Кількість ночей
+            </p>
+          </li>
+          <li>
+            <p class="room-hero-label-title">грн</p>
+          </li>
+        </ul>
+
+        <button class="modal-send-btn" type="submit">ЗАБРОНЮВАТИ НОМЕР</button>
+      </form>
+    </div>
+  </div>
+</div>
