@@ -81,7 +81,7 @@
 
 <!-- ====================== Room Price Modal window ======================== -->
 
-<div class="modal" data-modal="3">
+<div class="modal modal-container" data-modal="3">
   <div class="room-modal">
     <div class="room-hero-modal">
       <button class="modal-close-button js-modal-close" type="button">
@@ -93,21 +93,40 @@
       <p class="modal-title">Двомісний люкс</p>
 
       <form class="modalform">
-        <label
-          ><span class="modal-input-title">Категорія номеру</span><br />
+        <<<<<<< HEAD <label =======
+        <label for="select"
+          >>>>>>> 79ce8e94f20b99ba88d4caf8e18f2466447af80e ><span
+            class="modal-input-title"
+            >Категорія номеру</span
+          ><br />
           <span class="modal-logo-use">
-            <select class="modal-input-hero modal-input1" name="1" id="select">
-              <option value="1">1</option>
-              <option value="3">3</option>
-              <option value="7">7</option>
-              <option value="14">14</option>
-            </select>
+            <span class="modal-arrow-position">
+              <select
+                class="modal-input-hero modal-input1"
+                name="1"
+                id="select"
+              >
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="7">7</option>
+                <option value="14">14</option>
+              </select>
+            </span>
           </span>
         </label>
 
-        <label>
+        <label for="room-input-text">
           <span class="modal-logo-use">
+            <<<<<<< HEAD
             <input class="modal-input-hero" required />
+            =======
+            <input
+              class="modal-input-hero"
+              id="room-input-text"
+              required
+              placeholder="1000"
+            />
+            >>>>>>> 79ce8e94f20b99ba88d4caf8e18f2466447af80e
           </span>
         </label>
         <ul class="title-room-hero">
