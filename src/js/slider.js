@@ -10,18 +10,19 @@ new Swiper('.mySwiper', {
   },
 });
 
-new Swiper('.room-hero-swiper', {
+new Swiper('.roomPageHero', {
   slidesPerView: 1,
   spaceBetween: 0,
+  loop: true,
+
   navigation: {
-    nextEl: '.btn-next',
-    prevEl: '.btn-prev',
+    nextEl: '.room-hero-next',
+    prevEl: '.room-hero-prev',
   },
 });
 
-new Swiper('.details-slider', {
+new Swiper('.detailsSlider', {
   slidesPerView: 'auto',
-  spaceBetween: 86,
   loop: true,
   navigation: {
     nextEl: '.details-btn-next',
