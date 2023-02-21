@@ -85,7 +85,6 @@ nav {
 .header-list {
   display: flex;
   align-items: center;
-  
 }
 
 .header-text {
@@ -94,7 +93,7 @@ nav {
 }
 
 @media screen and (min-width: 414px) {
-  .topline{
+  .topline {
     font-size: 36px;
     margin-right: 0;
   }
@@ -144,5 +143,10 @@ nav {
 @media screen and (min-width: 1280px) {
   .socials {
     display: block;
+  }
+}
+@media screen and (max-width: 413px) {
+  .topline {
+    margin-right: 20px;
   }
 }
